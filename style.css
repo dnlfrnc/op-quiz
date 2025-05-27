@@ -36,7 +36,9 @@ button {
 button.selected {
   background-color: #238636;
   color: white;
+  border-color: #238636;
 }
+
 
 #next-btn {
   background-color: #da3633;
