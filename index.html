@@ -45,19 +45,14 @@
     function showQuestion() {
       if (currentIndex < selectedQuestions.length) {
         document.getElementById("question").textContent = `${currentIndex + 1}. ${selectedQuestions[currentIndex].text}`;
-        document.getElementById("feedback").textContent = "";
       } else {
-        const percentage = Math.round((score / selectedQuestions.length) * 100);
-        let resultText = `Pontszám: ${score} / ${selectedQuestions.length} (${percentage}%)`;
-        if (score <= 16) {
-          resultText += " - Nem sikerült";
-        } else {
-          resultText += " - Sikerült!";
-        }
+        let resultText = `${selectedQuestions.length}/${score}. `;
+        resultText += (score > 16) ? "Sikerült!" : "Nem sikerült.";
         document.getElementById("question").textContent = resultText;
         document.getElementById("true-btn").style.display = "none";
         document.getElementById("false-btn").style.display = "none";
         document.getElementById("next-btn").style.display = "none";
+        document.getElementById("feedback").textContent = "";
       }
     }
 
@@ -71,7 +66,6 @@
     function checkAnswer(userAnswer) {
       const correct = selectedQuestions[currentIndex].answer === userAnswer;
       if (correct) score++;
-      document.getElementById("feedback").textContent = correct ? "Helyes!" : "Helytelen!";
     }
   </script>
 </body>
