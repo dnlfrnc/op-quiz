@@ -1,0 +1,70 @@
+[
+  {
+    "text": "Az operációs rendszer fő célja a felhasználó programjának zökkenőmentes futtatása.",
+    "answer": true
+  },
+  {
+    "text": "A multiprogramozásban csak egy folyamat futhat párhuzamosan.",
+    "answer": false
+  },
+  {
+    "text": "A Round-Robin algoritmus időosztásos elv alapján működik.",
+    "answer": true
+  },
+  {
+    "text": "A szálak a programban több szálra osztott végrehajtást jelentenek.",
+    "answer": true
+  },
+  {
+    "text": "A holtpont kezelése mindig veszteségmentes.",
+    "answer": false
+  },
+  {
+    "text": "Az NT ütemezője a kernel módban, egy darab ütemező modulban található.",
+    "answer": false
+  },
+  {
+    "text": "A tároló méretét megnövelve a FAT mérete nem arányosan növekszik.",
+    "answer": false
+  },
+  {
+    "text": "Az exokernel gyakorlatilag rendszer rutinkönyvtárat jelent.",
+    "answer": true
+  },
+  {
+    "text": "A monitor programszerkezetben két feltételváltozó és két művelet van.",
+    "answer": false
+  },
+  {
+    "text": "A biztonsági másolat egy adott állomány dupla(esetleg többszörös) tárolása, az eredeti állománnyal egyező tárhelyen.",
+    "answer": false
+  },
+  {
+    "text": "Informatikai szempontból a 'random' a 'sequence' ellentéte.",
+    "answer": true
+  },
+  {
+    "text": "Egy folyamathoz több IOCB is tartozhat.",
+    "answer": true
+  },
+  {
+    "text": "A gyorsító tár gyorsabb, mint az egyik hozzá kapcsolódó, gyorsítandó tár.",
+    "answer": true
+  },
+  {
+    "text": "A független folyamatok jellemzően aszinkron működésűek.",
+    "answer": true
+  },
+  {
+    "text": "A LED lézer technológia esetén a lapméret növelése jelentős készülékméret növekedést eredményez.",
+    "answer": true
+  },
+  {
+    "text": "Az igény szerinti lapozás csak a laphibát megszüntető lapot teszi át a RAM-ba.",
+    "answer": true
+  },
+  {
+    "text": "A memória védelme alatt azt értjük, hogy az osztott elérésű memórián kívül se a folyamatok, se az operációs rendszer ne legyen képes módosítani egy másik folyamat címtartományába tartozó memóriaterületet.",
+    "answer": true
+  }
+]
