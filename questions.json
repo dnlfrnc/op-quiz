@@ -1,62 +1,63 @@
 [
-  {
-    "text": "Az operációs rendszer fő célja, hogy a felhasználó zökkenőmentesen futtathassa a saját programját.",
-    "answer": true
-  },
-  {
-    "text": "Az operációs rendszer nem közvetlenül kommunikál a hardverrel, hanem mindig a felhasználói programokon keresztül.",
-    "answer": false
-  },
-  {
-    "text": "Az operációs rendszerek felépítése tipikusan réteges szerkezetű.",
-    "answer": true
-  },
-  {
-    "text": "A kernel a felhasználó által közvetlenül vezérelhető, jól látható része az operációs rendszernek.",
-    "answer": false
-  },
-  {
-    "text": "A monolitikus kernel egyetlen nagy program, amely tartalmazza a rendszermag összes funkcióját.",
-    "answer": true
-  },
-  {
-    "text": "A mikrokernelek minden funkciót a kernel módban futtatnak.",
-    "answer": false
-  },
-  {
-    "text": "A mikrokernelek előnye, hogy a felhasználói programhibák nem veszélyeztetik a rendszer stabilitását.",
-    "answer": true
-  },
-  {
-    "text": "A mikrokernel architektúra minden esetben gyorsabb, mint a monolitikus kernel.",
-    "answer": false
-  },
-  {
-    "text": "A hibrid kernelek ötvözik a mikro- és monolitikus kernel megoldásait.",
-    "answer": true
-  },
-  {
-    "text": "Az exokernel nem tartalmaz absztrakciókat, csak hardverközeli hozzáférést biztosít.",
-    "answer": true
-  },
-  {
-    "text": "Az időosztásos rendszerek nem támogatják a többfelhasználós működést.",
-    "answer": false
-  },
-  {
-    "text": "Az időosztásos rendszerek lehetővé teszik, hogy a felhasználók úgy érezzék, mintha saját gépen dolgoznának.",
-    "answer": true
-  },
-  {
-    "text": "A multiprogramozás egy program teljes lefutása után indítja a következő programot.",
-    "answer": false
-  },
-  {
-    "text": "Az operációs rendszerek komponensei között megtalálható a folyamatkezelő és a központi tárkezelő is.",
-    "answer": true
-  },
-  {
-    "text": "A kernel ütemezője egyedül a monolitikus rendszerekben található meg.",
-    "answer": false
-  }
+  { "text": "Az operációs rendszer fő célja, hogy a felhasználó zökkenőmentesen futtathassa a saját programját.", "answer": true },
+  { "text": "Az operációs rendszer nem közvetlenül kommunikál a hardverrel, hanem mindig a felhasználói programokon keresztül.", "answer": false },
+  { "text": "Az operációs rendszerek felépítése tipikusan réteges szerkezetű.", "answer": true },
+  { "text": "A kernel a felhasználó által közvetlenül vezérelhető, jól látható része az operációs rendszernek.", "answer": false },
+  { "text": "A monolitikus kernel egyetlen nagy program, amely tartalmazza a rendszermag összes funkcióját.", "answer": true },
+  { "text": "A mikrokernelek minden funkciót a kernel módban futtatnak.", "answer": false },
+  { "text": "A mikrokernelek előnye, hogy a felhasználói programhibák nem veszélyeztetik a rendszer stabilitását.", "answer": true },
+  { "text": "A mikrokernel architektúra minden esetben gyorsabb, mint a monolitikus kernel.", "answer": false },
+  { "text": "A hibrid kernelek ötvözik a mikro- és monolitikus kernel megoldásait.", "answer": true },
+  { "text": "Az exokernel nem tartalmaz absztrakciókat, csak hardverközeli hozzáférést biztosít.", "answer": true },
+  { "text": "Az időosztásos rendszerek nem támogatják a többfelhasználós működést.", "answer": false },
+  { "text": "Az időosztásos rendszerek lehetővé teszik, hogy a felhasználók úgy érezzék, mintha saját gépen dolgoznának.", "answer": true },
+  { "text": "A multiprogramozás egy program teljes lefutása után indítja a következő programot.", "answer": false },
+  { "text": "Az operációs rendszerek komponensei között megtalálható a folyamatkezelő és a központi tárkezelő is.", "answer": true },
+  { "text": "A kernel ütemezője egyedül a monolitikus rendszerekben található meg.", "answer": false }
+  { "text": "A folyamat (process) a számítási feladatok végrehajtásának alapegysége.", "answer": true },
+  { "text": "A multiprogramozott rendszerekben egy időben csak egy folyamat lehet futó állapotban.", "answer": false },
+  { "text": "A futásra kész folyamat már minden erőforrást birtokol, kivéve a CPU-t.", "answer": true },
+  { "text": "A PCB tárolja a folyamat aktuális állapotát, regisztereit és memóriainformációit.", "answer": true },
+  { "text": "A programszámláló a következő végrehajtandó utasítás címét tartalmazza.", "answer": true },
+  { "text": "Az NMI megszakítás maszkolható, így átmenetileg letiltható.", "answer": false },
+  { "text": "A CPU-ütemezési információ a folyamat prioritását és jogosultságait is tartalmazza.", "answer": true },
+  { "text": "A megszakítások mindig várakoztathatók, nincs olyan, amit azonnal végre kell hajtani.", "answer": false },
+  { "text": "A szál a folyamat teljes állapotát tárolja, így önállóan ütemezhető.", "answer": false },
+  { "text": "A folyamat szálainak közös a virtuális memória címtartománya.", "answer": true },
+  { "text": "A Windows NT szálai két veremtárral rendelkeznek: egy kernel módú és egy user módú.", "answer": true },
+  { "text": "A szálak nem tartalmazhatnak regisztereket, csak a verem területet.", "answer": false },
+  { "text": "A megszakítások nem okozhatnak szinkronizációs problémákat.", "answer": false },
+  { "text": "A szál egyedi azonosítóval (Thread ID) rendelkezik.", "answer": true },
+  { "text": "A folyamatok közötti kommunikációhoz csak közös memória használható.", "answer": false },
+  { "text": "A multiprogramozott rendszerek képesek több folyamatot egyidőben futtatni, a processzorok számától függően.", "answer": true },
+  { "text": "A folyamatok ütemezésére nincs szükség, ha mindig csak egy folyamat fut.", "answer": false },
+  { "text": "A kritikus szakaszok nem okozhatnak megszakítást vagy kivételt.", "answer": true },
+  { "text": "A környezetváltás során a megszakítási szint (IRQL) mindig változik.", "answer": false },
+  { "text": "A szálak gyorsabbak a folyamatoknál, mert kevesebb információt tárolnak magukról.", "answer": true }
+  { "text": "Az FCFS algoritmus preemptív működésű.", "answer": false },
+  { "text": "Az RR (Round-Robin) algoritmus preemptív ütemezésű.", "answer": true },
+  { "text": "A prioritásos ütemezés során a legmagasabb prioritású folyamat kap CPU-t.", "answer": true },
+  { "text": "Az SJF (Shortest Job First) algoritmus nem preemptív.", "answer": true },
+  { "text": "Az SRTF (Shortest Remaining Time First) algoritmus a preemptív SJF változata.", "answer": true },
+  { "text": "A HRR algoritmus nem használ öregítést a kiéheztetés elkerülésére.", "answer": false },
+  { "text": "Az időosztásos rendszerekben a kvantumidő hossza befolyásolja a válaszidőt.", "answer": true },
+  { "text": "Az aszimmetrikus ütemezésnél minden CPU mag futtat saját ütemezőt.", "answer": false },
+  { "text": "A szimmetrikus ütemezésben egyetlen CPU mag végzi a döntést, a többiek nem ütemeznek.", "answer": false },
+  { "text": "A CPU kihasználtság azt mutatja meg, hogy a CPU idejének hány százalékában dolgozik folyamatokon.", "answer": true },
+  { "text": "A körülfordulási idő (Turnaround Time) a munka teljes futási idejét mutatja.", "answer": true },
+  { "text": "A várakozási idő (Waiting Time) a CPU által végzett tényleges futási időt mutatja.", "answer": false },
+  { "text": "A válaszidő (Response Time) azt jelzi, milyen gyorsan reagál az OS a felhasználói igényekre.", "answer": true },
+  { "text": "A HRR algoritmus az SJF egy változata, amely figyelembe veszi a várakozási időt is.", "answer": true },
+  { "text": "A többszintű várakozási sorok (SMQ) nem mentesek a kiéheztetéstől.", "answer": true },
+  { "text": "A visszacsatolt többszintű sorok (MFQ) esetében a folyamatok képesek egyik sorból a másikba átlépni.", "answer": true },
+  { "text": "Az MFQ algoritmus a kiéheztetés elkerülésére nem nyújt megoldást.", "answer": false },
+  { "text": "Az időosztásos rendszerekben minden folyamat egy teljes kvantumot kap, mielőtt kontextusváltás történne.", "answer": true },
+  { "text": "Az NT rendszerben az ütemező mindig csak az első három prioritási szinttel dolgozik.", "answer": false },
+  { "text": "A prioritási szintek fixek, az OS nem módosíthatja őket.", "answer": false },
+  { "text": "Az NT rendszerben a kvantumidő minden szál esetében azonos hosszúságú.", "answer": false },
+  { "text": "A CPU ütemező a kernel része, és állandóan a memóriában van.", "answer": true },
+  { "text": "A szálak közötti váltás csak a preemptív rendszerekre jellemző.", "answer": false },
+  { "text": "Az ütemezést kiváltó esemény lehet egy folyamat befejeződése, egy várakozási igény vagy egy időzítő megszakítás.", "answer": true },
+  { "text": "Az RR algoritmus jellemzője a konvoj hatás, mivel a hosszú folyamatok hátráltatják a rövideket.", "answer": false }
 ]
+
