@@ -64,20 +64,25 @@
       currentIndex++;
       showQuestion();
     };
-
+    
     function selectAnswer(userAnswer, btnId) {
-      clearSelection();
-      document.getElementById(btnId).classList.add("selected");
-      lastSelected = document.getElementById(btnId);
-
-      const correct = selectedQuestions[currentIndex].answer === userAnswer;
-      if (correct) {
-        score++;
-        document.getElementById("feedback").textContent = "Helyes!";
-      } else {
-        document.getElementById("feedback").textContent = "Helytelen!";
-      }
+    clearSelection();
+    document.getElementById(btnId).classList.add("selected");
+    lastSelected = document.getElementById(btnId);
+  
+    const correct = selectedQuestions[currentIndex].answer === userAnswer;
+    if (correct) {
+      score++;
     }
+  
+    // Csak akkor írjuk ki, ha nem az utolsó kérdés
+    if (currentIndex < selectedQuestions.length - 1) {
+      document.getElementById("feedback").textContent = correct ? "Helyes!" : "Helytelen!";
+    } else {
+      document.getElementById("feedback").textContent = "";
+    }
+  }
+
 
     function clearSelection() {
       document.getElementById("true-btn").classList.remove("selected");
