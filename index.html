@@ -17,12 +17,15 @@
 
   <script>
     let questions = [];
+    let selectedQuestions = [];
     let currentIndex = 0;
+    let score = 0;
 
     fetch('questions.json')
       .then(response => response.json())
       .then(data => {
-        questions = data;
+        questions = shuffleArray(data).slice(0, 24);
+        selectedQuestions = questions;
         showQuestion();
       })
       .catch(error => {
@@ -30,12 +33,28 @@
         document.getElementById('question').textContent = 'Hiba a kérdések betöltésekor.';
       });
 
+    function shuffleArray(array) {
+      let shuffled = array.slice();
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled;
+    }
+
     function showQuestion() {
-      if (currentIndex < questions.length) {
-        document.getElementById("question").textContent = questions[currentIndex].text;
+      if (currentIndex < selectedQuestions.length) {
+        document.getElementById("question").textContent = `${currentIndex + 1}. ${selectedQuestions[currentIndex].text}`;
         document.getElementById("feedback").textContent = "";
       } else {
-        document.getElementById("question").textContent = "Kvíz vége!";
+        const percentage = Math.round((score / selectedQuestions.length) * 100);
+        let resultText = `Pontszám: ${score} / ${selectedQuestions.length} (${percentage}%)`;
+        if (score <= 16) {
+          resultText += " - Nem sikerült";
+        } else {
+          resultText += " - Sikerült!";
+        }
+        document.getElementById("question").textContent = resultText;
         document.getElementById("true-btn").style.display = "none";
         document.getElementById("false-btn").style.display = "none";
         document.getElementById("next-btn").style.display = "none";
@@ -50,9 +69,11 @@
     };
 
     function checkAnswer(userAnswer) {
-      const correct = questions[currentIndex].answer === userAnswer;
+      const correct = selectedQuestions[currentIndex].answer === userAnswer;
+      if (correct) score++;
       document.getElementById("feedback").textContent = correct ? "Helyes!" : "Helytelen!";
     }
   </script>
 </body>
 </html>
+
