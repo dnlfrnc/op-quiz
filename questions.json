@@ -308,7 +308,7 @@
   { "text": "A nyílt rendszerek jellemzője, hogy bővíthetők és heterogén hardvereket is kezelhetnek.", "answer": true },
   { "text": "A cloud rendszerekben minden felhasználó kizárólag saját gépen dolgozik.", "answer": false },
   { "text": "A konkurens működéshez nincs szükség több processzorra.", "answer": false },
-  { "text": "A jövő rendszerei várhatóan egyre inkább támogatják a hibatűrést és a skálázhatóságot.", "answer": true },
+  { "text": "A jövő rendszerei várhatóan egyre inkább támogatják a hibatűrést és a skálázhatóságot.", "answer": true }
 ]
 
 
