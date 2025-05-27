@@ -1,70 +1,62 @@
 [
   {
-    "text": "Az NT ütemezője a kernel módban, egy darab ütemező modulban található.",
-    "answer": false
-  },
-  {
-    "text": "A tároló méretét megnövelve a FAT mérete nem arányosan növekszik.",
-    "answer": false
-  },
-  {
-    "text": "Az exokernel gyakorlatilag rendszer rutinkönyvtárat jelent.",
-    "answer": true
-  },
-  {
-    "text": "A monitor programszerkezetben két feltételváltozó és két művelet van.",
-    "answer": false
-  },
-  {
-    "text": "A biztonsági másolat egy adott állomány dupla(esetleg többszörös) tárolása, az eredeti állománnyal egyező tárhelyen.",
-    "answer": false
-  },
-  {
     "text": "Az operációs rendszer fő célja, hogy a felhasználó zökkenőmentesen futtathassa a saját programját.",
     "answer": true
   },
   {
-    "text": "A multiprogramozott rendszerekben egy időben csak egy folyamat lehet futó állapotban.",
+    "text": "Az operációs rendszer nem közvetlenül kommunikál a hardverrel, hanem mindig a felhasználói programokon keresztül.",
     "answer": false
   },
   {
-    "text": "Az FCFS algoritmus preemptív működésű.",
+    "text": "Az operációs rendszerek felépítése tipikusan réteges szerkezetű.",
+    "answer": true
+  },
+  {
+    "text": "A kernel a felhasználó által közvetlenül vezérelhető, jól látható része az operációs rendszernek.",
     "answer": false
   },
   {
-    "text": "A szálak önálló folyamatok, amelyek külön memóriaterületen futnak.",
+    "text": "A monolitikus kernel egyetlen nagy program, amely tartalmazza a rendszermag összes funkcióját.",
+    "answer": true
+  },
+  {
+    "text": "A mikrokernelek minden funkciót a kernel módban futtatnak.",
     "answer": false
   },
   {
-    "text": "A kritikus szakaszban egyszerre csak egy folyamat tartózkodhat.",
+    "text": "A mikrokernelek előnye, hogy a felhasználói programhibák nem veszélyeztetik a rendszer stabilitását.",
     "answer": true
   },
   {
-    "text": "A holtpont négy feltétele közül a kölcsönös kizárás mindig fennáll, ha nem megosztható erőforrásokról van szó.",
-    "answer": true
-  },
-  {
-    "text": "A lapozás fix méretű memóriablokkokkal dolgozik.",
-    "answer": true
-  },
-  {
-    "text": "A fájl logikai információk gyűjteménye, amelyet egyedileg azonosíthatunk a fájlnév segítségével.",
-    "answer": true
-  },
-  {
-    "text": "A perifériák a számítógép beágyazott részei, a CPU részei.",
+    "text": "A mikrokernel architektúra minden esetben gyorsabb, mint a monolitikus kernel.",
     "answer": false
   },
   {
-    "text": "Az operációs rendszer felelős a felhasználói azonosításért és a hozzáférési jogok ellenőrzéséért.",
+    "text": "A hibrid kernelek ötvözik a mikro- és monolitikus kernel megoldásait.",
     "answer": true
   },
   {
-    "text": "A Windows NT kernel architektúrája réteges szerkezetű.",
+    "text": "Az exokernel nem tartalmaz absztrakciókat, csak hardverközeli hozzáférést biztosít.",
     "answer": true
   },
   {
-    "text": "Az elosztott rendszerek célja többek között a párhuzamos feldolgozás és a hibatűrés biztosítása.",
+    "text": "Az időosztásos rendszerek nem támogatják a többfelhasználós működést.",
+    "answer": false
+  },
+  {
+    "text": "Az időosztásos rendszerek lehetővé teszik, hogy a felhasználók úgy érezzék, mintha saját gépen dolgoznának.",
     "answer": true
+  },
+  {
+    "text": "A multiprogramozás egy program teljes lefutása után indítja a következő programot.",
+    "answer": false
+  },
+  {
+    "text": "Az operációs rendszerek komponensei között megtalálható a folyamatkezelő és a központi tárkezelő is.",
+    "answer": true
+  },
+  {
+    "text": "A kernel ütemezője egyedül a monolitikus rendszerekben található meg.",
+    "answer": false
   }
 ]
