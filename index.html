@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Operációs Rendszerek Kvíz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="quiz-box">
+    <h1>Igaz-Hamis Kvíz</h1>
+    <div id="question">Kérdés betöltése...</div>
+    <button id="true-btn">Igaz</button>
+    <button id="false-btn">Hamis</button>
+    <div id="feedback"></div>
+    <button id="next-btn">Következő</button>
+  </div>
+
+  <script>
+    let questions = [];
+    let currentIndex = 0;
+
+    fetch('questions.json')
+      .then(response => response.json())
+      .then(data => {
+        questions = data;
+        showQuestion();
+      })
+      .catch(error => {
+        console.error('Hiba a kérdések betöltésekor:', error);
+        document.getElementById('question').textContent = 'Hiba a kérdések betöltésekor.';
+      });
+
+    function showQuestion() {
+      if (currentIndex < questions.length) {
+        document.getElementById("question").textContent = questions[currentIndex].text;
+        document.getElementById("feedback").textContent = "";
+      } else {
+        document.getElementById("question").textContent = "Kvíz vége!";
+        document.getElementById("true-btn").style.display = "none";
+        document.getElementById("false-btn").style.display = "none";
+        document.getElementById("next-btn").style.display = "none";
+      }
+    }
+
+    document.getElementById("true-btn").onclick = () => checkAnswer(true);
+    document.getElementById("false-btn").onclick = () => checkAnswer(false);
+    document.getElementById("next-btn").onclick = () => {
+      currentIndex++;
+      showQuestion();
+    };
+
+    function checkAnswer(userAnswer) {
+      const correct = questions[currentIndex].answer === userAnswer;
+      document.getElementById("feedback").textContent = correct ? "Helyes!" : "Helytelen!";
+    }
+  </script>
+</body>
+</html>
