@@ -1,25 +1,5 @@
 [
   {
-    "text": "Az operációs rendszer fő célja a felhasználó programjának zökkenőmentes futtatása.",
-    "answer": true
-  },
-  {
-    "text": "A multiprogramozásban csak egy folyamat futhat párhuzamosan.",
-    "answer": false
-  },
-  {
-    "text": "A Round-Robin algoritmus időosztásos elv alapján működik.",
-    "answer": true
-  },
-  {
-    "text": "A szálak a programban több szálra osztott végrehajtást jelentenek.",
-    "answer": true
-  },
-  {
-    "text": "A holtpont kezelése mindig veszteségmentes.",
-    "answer": false
-  },
-  {
     "text": "Az NT ütemezője a kernel módban, egy darab ütemező modulban található.",
     "answer": false
   },
@@ -40,31 +20,51 @@
     "answer": false
   },
   {
-    "text": "Informatikai szempontból a 'random' a 'sequence' ellentéte.",
+    "text": "Az operációs rendszer fő célja, hogy a felhasználó zökkenőmentesen futtathassa a saját programját.",
     "answer": true
   },
   {
-    "text": "Egy folyamathoz több IOCB is tartozhat.",
+    "text": "A multiprogramozott rendszerekben egy időben csak egy folyamat lehet futó állapotban.",
+    "answer": false
+  },
+  {
+    "text": "Az FCFS algoritmus preemptív működésű.",
+    "answer": false
+  },
+  {
+    "text": "A szálak önálló folyamatok, amelyek külön memóriaterületen futnak.",
+    "answer": false
+  },
+  {
+    "text": "A kritikus szakaszban egyszerre csak egy folyamat tartózkodhat.",
     "answer": true
   },
   {
-    "text": "A gyorsító tár gyorsabb, mint az egyik hozzá kapcsolódó, gyorsítandó tár.",
+    "text": "A holtpont négy feltétele közül a kölcsönös kizárás mindig fennáll, ha nem megosztható erőforrásokról van szó.",
     "answer": true
   },
   {
-    "text": "A független folyamatok jellemzően aszinkron működésűek.",
+    "text": "A lapozás fix méretű memóriablokkokkal dolgozik.",
     "answer": true
   },
   {
-    "text": "A LED lézer technológia esetén a lapméret növelése jelentős készülékméret növekedést eredményez.",
+    "text": "A fájl logikai információk gyűjteménye, amelyet egyedileg azonosíthatunk a fájlnév segítségével.",
     "answer": true
   },
   {
-    "text": "Az igény szerinti lapozás csak a laphibát megszüntető lapot teszi át a RAM-ba.",
+    "text": "A perifériák a számítógép beágyazott részei, a CPU részei.",
+    "answer": false
+  },
+  {
+    "text": "Az operációs rendszer felelős a felhasználói azonosításért és a hozzáférési jogok ellenőrzéséért.",
     "answer": true
   },
   {
-    "text": "A memória védelme alatt azt értjük, hogy az osztott elérésű memórián kívül se a folyamatok, se az operációs rendszer ne legyen képes módosítani egy másik folyamat címtartományába tartozó memóriaterületet.",
+    "text": "A Windows NT kernel architektúrája réteges szerkezetű.",
+    "answer": true
+  },
+  {
+    "text": "Az elosztott rendszerek célja többek között a párhuzamos feldolgozás és a hibatűrés biztosítása.",
     "answer": true
   }
 ]
