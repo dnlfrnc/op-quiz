@@ -59,26 +59,24 @@
     }
 
     document.getElementById("true-btn").onclick = () => selectAnswer(true, "true-btn");
-    document.getElementById("false-btn").onclick = () => selectAnswer(false, "false-btn");
-    document.getElementById("next-btn").onclick = () => {
-      currentIndex++;
-      showQuestion();
-    };
+document.getElementById("false-btn").onclick = () => selectAnswer(false, "false-btn");
+document.getElementById("next-btn").onclick = () => {
+  currentIndex++;
+  showQuestion();
+};
 
-    function selectAnswer(userAnswer, btnId) {
-      if (lastSelected) lastSelected.classList.remove("selected");
-      document.getElementById(btnId).classList.add("selected");
-      lastSelected = document.getElementById(btnId);
+function selectAnswer(userAnswer, btnId) {
+  clearSelection();
+  document.getElementById(btnId).classList.add("selected");
+  lastSelected = document.getElementById(btnId);
+  const correct = selectedQuestions[currentIndex].answer === userAnswer;
+  if (correct) score++;
+}
 
-      const correct = selectedQuestions[currentIndex].answer === userAnswer;
-      if (correct) score++;
-    }
-
-    function clearSelection() {
-      document.getElementById("true-btn").classList.remove("selected");
-      document.getElementById("false-btn").classList.remove("selected");
-      lastSelected = null;
-    }
+function clearSelection() {
+  document.getElementById("true-btn").classList.remove("selected");
+  document.getElementById("false-btn").classList.remove("selected");
+}
   </script>
 </body>
 </html>
