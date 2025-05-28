@@ -370,5 +370,630 @@
   { "text": "A szálak user módú veremtárának foglalása során a Reserve és Commit mindig egy lépésben történik.", "answer": false },
   { "text": "A logikai címtér tartalmazza az operációs rendszer és az alkalmazások memóriatartományát is.", "answer": true }
 ]
+[
+  {
+    "text": "Az NT ütemezője a kernel módban, egy darab ütemező modulban található",
+    "answer": false
+  },
+  {
+    "text": "A tároló méretét megnövelve a FAT mérete nem arányosan növekszik",
+    "answer": false
+  },
+  {
+    "text": "Az exokernel gyakorlatilag rendszer rutinkönyvtárat jelent",
+    "answer": true
+  },
+  {
+    "text": "A monitor programszerkezetben két feltételváltozó és két művelet van",
+    "answer": false
+  },
+  {
+    "text": "A biztonsági másolat egy adott állomány dupla (esetleg többszörös) tárolása, az eredeti állománnyal egyező tárhelyen",
+    "answer": false
+  },
+  {
+    "text": "Informatikai szempontból a 'random' a 'sequence' ellentéte",
+    "answer": true
+  },
+  {
+    "text": "Egy folyamathoz több IOCB is tartozhat",
+    "answer": true
+  },
+  {
+    "text": "A gyorsító tár gyorsabb, mint az egyik hozzá kapcsolódó, gyorsítandó tár",
+    "answer": true
+  },
+  {
+    "text": "A független folyamatok jellemzően aszinkron működésűek",
+    "answer": true
+  },
+  {
+    "text": "Az átlátszóság azt jelenti, hogy egy szolgáltatás igénybevétele független a szolgáltatás fizikai helyétől, illetve a szolgáltatást biztosító hardvertől és szoftvertől",
+    "answer": true
+  },
+  {
+    "text": "A Windows NT ha lehetősége van rá, szálütemezést használ",
+    "answer": false
+  },
+  {
+    "text": "Az operációs rendszer közvetlenül kommunikál a hardverrel",
+    "answer": false
+  },
+  {
+    "text": "A Disc Interleaving optimális logikai sáv sorrendet jelent",
+    "answer": false
+  },
+  {
+    "text": "Az operációs rendszer szintjén egy Windows NT szálat egy ún executive szál blokk (ETHREAD) reprezentál",
+    "answer": true
+  },
+  {
+    "text": "A UNIX kernel módban preemptív ütemezést használ, de user módban nem preemptív ütemezést használ",
+    "answer": false
+  },
+  {
+    "text": "Az egyidejűség esetén a folyamatoknak be kell várniuk egymást",
+    "answer": true
+  },
+  {
+    "text": "Az NT virtuális tárkezelése lapszervezést használ",
+    "answer": true
+  },
+  {
+    "text": "Az NTFS írási folyamata hat lépésből áll",
+    "answer": false
+  },
+  {
+    "text": "Indirekt kommunikáció esetén jellemző a portok használata",
+    "answer": false
+  },
+  {
+    "text": "A MAR írni vagy olvasni kívánt memória címét tartalmazza",
+    "answer": true
+  },
+  {
+    "text": "Az igény szerinti lapozás csak a laphibát megszüntető lapot teszi át RAM-ba",
+    "answer": true
+  },
+  {
+    "text": "Az FCFS preemptív algoritmus",
+    "answer": false
+  },
+  {
+    "text": "A trójai programok képesek \"önálló\" akciókra, a felhasználó közreműködése nélkül is bejuthatnak a rendszerbe",
+    "answer": false
+  },
+  {
+    "text": "A szabályzás zárt hatásláncú folyamat",
+    "answer": true
+  },
+  {
+    "text": "A Master File Table nem más, mint logikai clusterek sorozata",
+    "answer": false
+  },
+  {
+    "text": "A linux különböző verzióira a monolitikus vagy a hibrid kernel jellemző",
+    "answer": true
+  }
+]
+[
+  {
+    "text": "A deklaratív programozás két fő iránya a logikai és a funkcionális programozás",
+    "answer": true
+  },
+  {
+    "text": "Az UNIX user módban preemptív ütemezést használ, kernel módban viszont nem preemptív ütemezést használ",
+    "answer": true
+  },
+  {
+    "text": "A Round-Robin algoritmus túl hosszú időszelet esetén FCFS jellegűvé válik",
+    "answer": true
+  },
+  {
+    "text": "Indirekt kommunikáció esetén a folyamatok közvetlenül nevezik meg egymást",
+    "answer": false
+  },
+  {
+    "text": "Az NT ütemezése szál alapú, prioritásvezérelt és preemptív",
+    "answer": true
+  },
+  {
+    "text": "A KERNEL réteg egyik alapvető feladata az LPC szolgáltatás megvalósítása",
+    "answer": false
+  },
+  {
+    "text": "A Second Chance lapcsere nem használ reference bitet",
+    "answer": false
+  },
+  {
+    "text": "A vírusok - a férgekkel ellentétben - képesek \"önálló\" akcióra, a felhasználó közreműködése nélkül is tudnak terjedni",
+    "answer": false
+  },
+  {
+    "text": "A kölcsönös kizárás a nem megosztható erőforrások esetében nem küszöbölhető ki",
+    "answer": true
+  },
+  {
+    "text": "Láncolt lista esetén egy blokk sérülése a tárolt adat elvesztését okozhatja",
+    "answer": true
+  },
+  {
+    "text": "Az FCFS nem preemptív algoritmus",
+    "answer": true
+  },
+  {
+    "text": "A Commit az NT memóriafoglalásának első lépése",
+    "answer": false
+  },
+  {
+    "text": "Az igény szerinti lapozás nem csak a laphibát megszüntető lapot teszi a RAM-ba",
+    "answer": false
+  },
+  {
+    "text": "Az intel i7 CPU esetében a Memory Controller területarányosan sok magnyi részt foglal el",
+    "answer": true
+  },
+  {
+    "text": "A verem egy szálra jellemző elem",
+    "answer": true
+  },
+  {
+    "text": "A ferritgyűrűs tár olvasás művelete összetetteb az írásnál műveletnél",
+    "answer": true
+  },
+  {
+    "text": "A LED lézer technológia esetén a lapméret növelése jelentős készülékméret növekedést eredményez",
+    "answer": true
+  },
+  {
+    "text": "A kritikus szakaszba a belépést csak szoftveres úton engedélyezhetjük",
+    "answer": false
+  },
+  {
+    "text": "Az NT ütemezője a kernel kódjában szétszórva található",
+    "answer": true
+  },
+  {
+    "text": "A PCB processzor szintű adatokat is tartalmaz",
+    "answer": true
+  },
+  {
+    "text": "Az NTFS Metadata azoknak az adatoknak a gyűjteménye, amelyek egy fájlrendszer kezeléséhez, illetve a benne tárolt fájlok eléréshez szükségesek",
+    "answer": true
+  },
+  {
+    "text": "Az NTDLL DLL a user mód legalsó rétege",
+    "answer": true
+  },
+  {
+    "text": "Egy elosztott rendszer minden gépe egyértelműen azonosítható és címezhető",
+    "answer": false
+  },
+  {
+    "text": "A LED lézer technológia esetén a lapméret nem eredményez jelentős készülékméret növekedést",
+    "answer": false
+  },
+  {
+    "text": "A 'Spooling' technológia háttértárat igényel",
+    "answer": true
+  }
+]
+[
+  {
+    "text": "A HPFS jellemzője a magic number",
+    "answer": false
+  },
+  {
+    "text": "A MAR tartalmazza az írni vagy olvasni kívánt memória címét nem tartalmazza",
+    "answer": false
+  },
+  {
+    "text": "Az összes EXT file rendszer használja a naplózást",
+    "answer": false
+  },
+  {
+    "text": "Az SJF algoritmus prioritásos és preemptív",
+    "answer": false
+  },
+  {
+    "text": "A monitorok programszerkezetben egy feltételváltozó és 2 művelet van",
+    "answer": true
+  },
+  {
+    "text": "A Logical Cluster a lemezen található clusterek azonosítására szolgál",
+    "answer": false
+  },
+  {
+    "text": "Az EREW PRAM gyakorlatilag a RAM modellhez hasonló működést produkál",
+    "answer": true
+  },
+  {
+    "text": "Hibrid kernel pl: Unixra jellemző",
+    "answer": false
+  },
+  {
+    "text": "A memória védelme alatt azt értjük, hogy az osztott elérésű memórián kívül se a folyamatok se az operációs rendszer ne legyen képes módosítani egy másik folyamat címtartományába tartozó memóriaterületet",
+    "answer": true
+  },
+  {
+    "text": "Az előretekintő lapozás becslésen alapul",
+    "answer": true
+  },
+  {
+    "text": "NT alapú rendszerekben minden szál alacsony prioritással kezdi futását",
+    "answer": false
+  },
+  {
+    "text": "Hálózati operációs rendszerek átlátszóságot biztosítanak",
+    "answer": false
+  },
+  {
+    "text": "A plug-and-play kezelő a Windows 2000 óta része a rendszernek",
+    "answer": true
+  },
+  {
+    "text": "A spooling technológia nem igényel háttértárat",
+    "answer": false
+  },
+  {
+    "text": "A virtuális memória méretének az operatív tár mérete szab határt",
+    "answer": true
+  },
+  {
+    "text": "Az UFS jellemzője a naplózás",
+    "answer": false
+  },
+  {
+    "text": "A RAM jelentése „Véletlen hozzáférésű Memória”",
+    "answer": false
+  },
+  {
+    "text": "AZ AMD K-6 processzor 64 bites szervezésű",
+    "answer": false
+  },
+  {
+    "text": "Egy HDD jellemzően rendelkezik FirmWare-el",
+    "answer": true
+  },
+  {
+    "text": "A POST a FirmWare egyik szolgáltatása",
+    "answer": true
+  },
+  {
+    "text": "A szabályzás nyílt hatásláncú folyamat",
+    "answer": false
+  },
+  {
+    "text": "A RAM jelentése \"tetszőleges hozzáférésű memória\"",
+    "answer": true
+  },
+  {
+    "text": "Az Intel Core processzor család 32 bites szervezésű",
+    "answer": false
+  },
+  {
+    "text": "SWAP nem alkalmas a várakozási idő elviselhető szinten tartására",
+    "answer": true
+  },
+  {
+    "text": "Láncolt lista esetén külső tördelődés nem lép fel",
+    "answer": true
+  },
+  {
+    "text": "Mikrokernel pl: a Windows rendszerekre jellemző",
+    "answer": false
+  },
+  {
+    "text": "A maszkolható megszakítások végrehajtása nem prioritásfüggő",
+    "answer": false
+  },
+  {
+    "text": "A PCB folyamatvezérlési adatokat nem tartalmaz",
+    "answer": false
+  },
+  {
+    "text": "A Windows kernel user módban is preemptív ütemezést használ",
+    "answer": true
+  }
+]
+[
+  {
+    "text": "A *dll fájlok a programok igényei szerint töltődnek be a memóriába",
+    "answer": true
+  },
+  {
+    "text": "A HRR algoritmus nem használ öregítést",
+    "answer": false
+  },
+  {
+    "text": "Az SMQ jobban kezeli a kiéheztetést mint az MFQ",
+    "answer": false
+  },
+  {
+    "text": "A Szemafor három műveletet használ",
+    "answer": true
+  },
+  {
+    "text": "Az CRCW PRAM tekinthető a klasszikus PRAM modellnek (-CRCW PRAM: mindent enged párhuzamosan)",
+    "answer": true
+  },
+  {
+    "text": "A TestAndSet független a PRAM modell műveleti sorrendjétől",
+    "answer": false
+  },
+  {
+    "text": "Egy folyamathoz több PCB is tartozhat",
+    "answer": false
+  },
+  {
+    "text": "Az UNIX kernel és user módban is preemptív ütemezést használ",
+    "answer": false
+  },
+  {
+    "text": "A laphiba azt jelenti, hogy a keresett lap nem található a RAM-ban",
+    "answer": true
+  },
+  {
+    "text": "A SMQ nem mentes a kiéheztetéstől",
+    "answer": true
+  },
+  {
+    "text": "A szálak közvetlenül, saját igény alapján jutnak erőforrásokhoz",
+    "answer": false
+  },
+  {
+    "text": "A készülék kezelő réteg jellemzően használ IRQ-t és DMA-t",
+    "answer": true
+  },
+  {
+    "text": "A globális változók szálra jellemző elemek",
+    "answer": false
+  },
+  {
+    "text": "RAM modell esetén a memória rekeszenként címezhető",
+    "answer": true
+  },
+  {
+    "text": "A Szemafor három változót használ",
+    "answer": false
+  },
+  {
+    "text": "A HAL réteg a használt CPU típusától függ",
+    "answer": true
+  },
+  {
+    "text": "A számítógép hálózatok egyik fontos jellemzője az átlátszóság",
+    "answer": false
+  },
+  {
+    "text": "A rövid távú ütemező nem kell, hogy egyfolytában a memóriában legyen",
+    "answer": false
+  },
+  {
+    "text": "A Szemafor egy változót használ",
+    "answer": true
+  },
+  {
+    "text": "Az RR (Round Robin) preemptív algoritmus",
+    "answer": true
+  },
+  {
+    "text": "A mentésnél jellemzően nem cél a keresés biztosítása",
+    "answer": true
+  },
+  {
+    "text": "A JFS jellemzője a naplózás",
+    "answer": true
+  },
+  {
+    "text": "Az együttműködés főleg a user folyamatokra jellemző",
+    "answer": false
+  },
+  {
+    "text": "A versengés a user folyamatokra jellemző",
+    "answer": true
+  },
+  {
+    "text": "Az NT ütemezője a kernel kódjában szétszórva található",
+    "answer": true
+  },
+  {
+    "text": "RP a RAM sor címzési idejét mutatja meg",
+    "answer": false
+  },
+  {
+    "text": "Az EEPROM blokkonként is törölhető",
+    "answer": false
+  },
+  {
+    "text": "A ROM csak egyszer írható",
+    "answer": true
+  },
+  {
+    "text": "Egy HDD jellemzően rendelkezik BIOS-sal",
+    "answer": false
+  }
+]
+[
+  {
+    "text": "Az Intel i3,i5, i7 processzor családok 32 bites szervezésűek",
+    "answer": false
+  },
+  {
+    "text": "A TestAndSet független a PRAM modell műveleti sorrendjétől",
+    "answer": false
+  },
+  {
+    "text": "Ütemezést kiváltó esemény lehet, amikor a futó folyamat várakozni kényszerül",
+    "answer": true
+  },
+  {
+    "text": "A objektumkezelő a kernel réteg egyik komponense",
+    "answer": true
+  },
+  {
+    "text": "Az FCFS nem primitív algoritmus",
+    "answer": true
+  },
+  {
+    "text": "Ütemezést kiváltó esemény lehet amikor a futó folyamat várakozni kényszerül",
+    "answer": true
+  },
+  {
+    "text": "Egy folyamathoz egy PCB tartozik",
+    "answer": true
+  },
+  {
+    "text": "Az assembly utasítások számokból állnak",
+    "answer": false
+  },
+  {
+    "text": "Az LPC a folyamatok közötti kommunikációt biztosítja gyors üzenettovábbítással",
+    "answer": true
+  },
+  {
+    "text": "A blokkok szektorokból állnak",
+    "answer": false
+  },
+  {
+    "text": "A mentésnél jellemzően cél a keresés biztosítása",
+    "answer": false
+  },
+  {
+    "text": "A Virtual Cluster az egy fájlhoz tartozó clusterek sorszáma",
+    "answer": false
+  },
+  {
+    "text": "Az NTDLL DLL a kernel mód legalsó rétege",
+    "answer": false
+  },
+  {
+    "text": "Elosztott fájlrendszer esetén a fájlok állapottere csak uniform lehet",
+    "answer": false
+  },
+  {
+    "text": "Az utasításszámláló nem szükségszerű eleme egy szálnak",
+    "answer": false
+  },
+  {
+    "text": "Hibrid kernel pl: az OS X-re jellemző",
+    "answer": false
+  },
+  {
+    "text": "A Szemafor a szinkronizációs problémák univerzális eszköze",
+    "answer": true
+  },
+  {
+    "text": "A Master File Table nem más, mint a fájl rekordok sorozata",
+    "answer": true
+  },
+  {
+    "text": "A Reserve az NT memóriafoglalásának első lépése",
+    "answer": true
+  },
+  {
+    "text": "Az igény szerinti lapozás csak a laphibát megszüntető lapot teszi át a RAM-ba",
+    "answer": true
+  },
+  {
+    "text": "Az NT alapú rendszerekben egy szálnak az ütemezés során 6 féle állapota lehet",
+    "answer": false
+  },
+  {
+    "text": "Az indexelt tárolást takarékos helygazdálkodás jellemzi",
+    "answer": false
+  },
+  {
+    "text": "A HRR algoritmus nem használ öregítést",
+    "answer": false
+  },
+  {
+    "text": "A hosszú távú ütemező gyorsabb, mint a középtávú ütemező",
+    "answer": false
+  },
+  {
+    "text": "A MAR írni és olvasni kívánt memória tartalmát tartalmazza",
+    "answer": false
+  },
+  {
+    "text": "A HAL réteg feladata többek közt a multiprocesszor ütemezés",
+    "answer": false
+  },
+  {
+    "text": "A RAM jelentése \"Tetszőleges Hozzáférésű Memória\"",
+    "answer": true
+  },
+  {
+    "text": "A Resident Monitor a memóriát több részre osztva kezeli",
+    "answer": true
+  },
+  {
+    "text": "Preemptív ütemezés esetén a kiosztott futási jog elvehető",
+    "answer": true
+  },
+  {
+    "text": "A Round-Robin algoritmus jellemzője a konvoj hatás",
+    "answer": false
+  }
+]
+[
+  {
+    "text": "A SJF algoritmus fő szempontja a hosszú löketidő",
+    "answer": false
+  },
+  {
+    "text": "A SMQ mentes a kiéheztetéstől",
+    "answer": false
+  },
+  {
+    "text": "A nehéz súlyú folyamat képes szálakra bomlani",
+    "answer": false
+  },
+  {
+    "text": "A farmer-worker modellt az adóoldali port jellemzi",
+    "answer": true
+  },
+  {
+    "text": "A csoportkommunikációt több adó oldali folyamat jellemzi",
+    "answer": false
+  },
+  {
+    "text": "A “Spooling” technológia nem igényel háttértárat",
+    "answer": false
+  },
+  {
+    "text": "A Resident Monitor egy hardver komponens",
+    "answer": false
+  },
+  {
+    "text": "A preemptív ütemezés esetén a kiosztott futási jog nem vehető el",
+    "answer": false
+  },
+  {
+    "text": "A közép távú ütemező nem kapcsolatos a háttértárral",
+    "answer": false
+  },
+  {
+    "text": "A Round-Robin nem preemptív algoritmus",
+    "answer": false
+  },
+  {
+    "text": "A könnyű súlyú folyamatok szálai osztoznak az erőforrásokon",
+    "answer": true
+  },
+  {
+    "text": "A folyamatok változásához csak egy veremtárra van szükség",
+    "answer": false
+  },
+  {
+    "text": "Az EREW PRAM tekinthető a klasszikus PRAM modellnek",
+    "answer": false
+  },
+  {
+    "text": "A kliens-szerver modellt a vevőoldali port jellemzi",
+    "answer": true
+  }
+]
+
 
 
