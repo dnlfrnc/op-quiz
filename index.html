@@ -13,7 +13,6 @@
     <button id="false-btn">Hamis</button>
     <div id="feedback"></div>
     <button id="next-btn">Következő</button>
-    <button id="evaluate-btn" style="display: none;">Értékelés</button>
     <button id="restart-btn" style="display: none;">Újra</button>
   </div>
 
@@ -56,18 +55,16 @@
         document.getElementById("true-btn").style.display = "inline-block";
         document.getElementById("false-btn").style.display = "inline-block";
         document.getElementById("next-btn").style.display = "inline-block";
-        document.getElementById("evaluate-btn").style.display = "none";
         document.getElementById("restart-btn").style.display = "none";
       } else {
-        let resultText = `${selectedQuestions.length}/${score}. `;
+        let resultText = `${selectedQuestions.length}/${score} pont. `;
         resultText += (score > 16) ? "Sikerült!" : "Nem sikerült.";
         document.getElementById("question").textContent = resultText;
 
-        // Gombok eltüntetése, Újra gomb megjelenítése
+        // Csak az Újra gombot mutatjuk
         document.getElementById("true-btn").style.display = "none";
         document.getElementById("false-btn").style.display = "none";
         document.getElementById("next-btn").style.display = "none";
-        document.getElementById("evaluate-btn").style.display = "none";
         document.getElementById("restart-btn").style.display = "inline-block";
         document.getElementById("feedback").textContent = "";
       }
@@ -78,17 +75,6 @@
 
     document.getElementById("next-btn").onclick = () => {
       currentIndex++;
-      if (currentIndex === selectedQuestions.length) {
-        document.getElementById("true-btn").style.display = "none";
-        document.getElementById("false-btn").style.display = "none";
-        document.getElementById("next-btn").style.display = "none";
-        document.getElementById("evaluate-btn").style.display = "inline-block";
-      } else {
-        showQuestion();
-      }
-    };
-
-    document.getElementById("evaluate-btn").onclick = () => {
       showQuestion();
     };
 
@@ -113,11 +99,11 @@
       document.getElementById("false-btn").classList.remove("selected");
     }
 
-    // Alapértelmezett betöltés
     loadQuiz();
   </script>
 </body>
 </html>
+
 
 
 
