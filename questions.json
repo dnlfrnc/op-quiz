@@ -1,376 +1,4 @@
 [
-  { "text": "Az operációs rendszer fő célja, hogy a felhasználó zökkenőmentesen futtathassa a saját programját.", "answer": true },
-  { "text": "Az operációs rendszer nem közvetlenül kommunikál a hardverrel, hanem mindig a felhasználói programokon keresztül.", "answer": false },
-  { "text": "Az operációs rendszerek felépítése tipikusan réteges szerkezetű.", "answer": true },
-  { "text": "A kernel a felhasználó által közvetlenül vezérelhető, jól látható része az operációs rendszernek.", "answer": false },
-  { "text": "A monolitikus kernel egyetlen nagy program, amely tartalmazza a rendszermag összes funkcióját.", "answer": true },
-  { "text": "A mikrokernelek minden funkciót a kernel módban futtatnak.", "answer": false },
-  { "text": "A mikrokernelek előnye, hogy a felhasználói programhibák nem veszélyeztetik a rendszer stabilitását.", "answer": true },
-  { "text": "A mikrokernel architektúra minden esetben gyorsabb, mint a monolitikus kernel.", "answer": false },
-  { "text": "A hibrid kernelek ötvözik a mikro- és monolitikus kernel megoldásait.", "answer": true },
-  { "text": "Az exokernel nem tartalmaz absztrakciókat, csak hardverközeli hozzáférést biztosít.", "answer": true },
-  { "text": "Az időosztásos rendszerek nem támogatják a többfelhasználós működést.", "answer": false },
-  { "text": "Az időosztásos rendszerek lehetővé teszik, hogy a felhasználók úgy érezzék, mintha saját gépen dolgoznának.", "answer": true },
-  { "text": "A multiprogramozás egy program teljes lefutása után indítja a következő programot.", "answer": false },
-  { "text": "Az operációs rendszerek komponensei között megtalálható a folyamatkezelő és a központi tárkezelő is.", "answer": true },
-  { "text": "A kernel ütemezője egyedül a monolitikus rendszerekben található meg.", "answer": false },
-  { "text": "A folyamat (process) a számítási feladatok végrehajtásának alapegysége.", "answer": true },
-  { "text": "A multiprogramozott rendszerekben egy időben csak egy folyamat lehet futó állapotban.", "answer": false },
-  { "text": "A futásra kész folyamat már minden erőforrást birtokol, kivéve a CPU-t.", "answer": true },
-  { "text": "A PCB tárolja a folyamat aktuális állapotát, regisztereit és memóriainformációit.", "answer": true },
-  { "text": "A programszámláló a következő végrehajtandó utasítás címét tartalmazza.", "answer": true },
-  { "text": "Az NMI megszakítás maszkolható, így átmenetileg letiltható.", "answer": false },
-  { "text": "A CPU-ütemezési információ a folyamat prioritását és jogosultságait is tartalmazza.", "answer": true },
-  { "text": "A megszakítások mindig várakoztathatók, nincs olyan, amit azonnal végre kell hajtani.", "answer": false },
-  { "text": "A szál a folyamat teljes állapotát tárolja, így önállóan ütemezhető.", "answer": false },
-  { "text": "A folyamat szálainak közös a virtuális memória címtartománya.", "answer": true },
-  { "text": "A Windows NT szálai két veremtárral rendelkeznek: egy kernel módú és egy user módú.", "answer": true },
-  { "text": "A szálak nem tartalmazhatnak regisztereket, csak a verem területet.", "answer": false },
-  { "text": "A megszakítások nem okozhatnak szinkronizációs problémákat.", "answer": false },
-  { "text": "A szál egyedi azonosítóval (Thread ID) rendelkezik.", "answer": true },
-  { "text": "A folyamatok közötti kommunikációhoz csak közös memória használható.", "answer": false },
-  { "text": "A multiprogramozott rendszerek képesek több folyamatot egyidőben futtatni, a processzorok számától függően.", "answer": true },
-  { "text": "A folyamatok ütemezésére nincs szükség, ha mindig csak egy folyamat fut.", "answer": false },
-  { "text": "A kritikus szakaszok nem okozhatnak megszakítást vagy kivételt.", "answer": true },
-  { "text": "A környezetváltás során a megszakítási szint (IRQL) mindig változik.", "answer": false },
-  { "text": "A szálak gyorsabbak a folyamatoknál, mert kevesebb információt tárolnak magukról.", "answer": true },
-  { "text": "Az FCFS algoritmus preemptív működésű.", "answer": false },
-  { "text": "Az RR (Round-Robin) algoritmus preemptív ütemezésű.", "answer": true },
-  { "text": "A prioritásos ütemezés során a legmagasabb prioritású folyamat kap CPU-t.", "answer": true },
-  { "text": "Az SJF (Shortest Job First) algoritmus nem preemptív.", "answer": true },
-  { "text": "Az SRTF (Shortest Remaining Time First) algoritmus a preemptív SJF változata.", "answer": true },
-  { "text": "A HRR algoritmus nem használ öregítést a kiéheztetés elkerülésére.", "answer": false },
-  { "text": "Az időosztásos rendszerekben a kvantumidő hossza befolyásolja a válaszidőt.", "answer": true },
-  { "text": "Az aszimmetrikus ütemezésnél minden CPU mag futtat saját ütemezőt.", "answer": false },
-  { "text": "A szimmetrikus ütemezésben egyetlen CPU mag végzi a döntést, a többiek nem ütemeznek.", "answer": false },
-  { "text": "A CPU kihasználtság azt mutatja meg, hogy a CPU idejének hány százalékában dolgozik folyamatokon.", "answer": true },
-  { "text": "A körülfordulási idő (Turnaround Time) a munka teljes futási idejét mutatja.", "answer": true },
-  { "text": "A várakozási idő (Waiting Time) a CPU által végzett tényleges futási időt mutatja.", "answer": false },
-  { "text": "A válaszidő (Response Time) azt jelzi, milyen gyorsan reagál az OS a felhasználói igényekre.", "answer": true },
-  { "text": "A HRR algoritmus az SJF egy változata, amely figyelembe veszi a várakozási időt is.", "answer": true },
-  { "text": "A többszintű várakozási sorok (SMQ) nem mentesek a kiéheztetéstől.", "answer": true },
-  { "text": "A visszacsatolt többszintű sorok (MFQ) esetében a folyamatok képesek egyik sorból a másikba átlépni.", "answer": true },
-  { "text": "Az MFQ algoritmus a kiéheztetés elkerülésére nem nyújt megoldást.", "answer": false },
-  { "text": "Az időosztásos rendszerekben minden folyamat egy teljes kvantumot kap, mielőtt kontextusváltás történne.", "answer": true },
-  { "text": "Az NT rendszerben az ütemező mindig csak az első három prioritási szinttel dolgozik.", "answer": false },
-  { "text": "A prioritási szintek fixek, az OS nem módosíthatja őket.", "answer": false },
-  { "text": "Az NT rendszerben a kvantumidő minden szál esetében azonos hosszúságú.", "answer": false },
-  { "text": "A CPU ütemező a kernel része, és állandóan a memóriában van.", "answer": true },
-  { "text": "A szálak közötti váltás csak a preemptív rendszerekre jellemző.", "answer": false },
-  { "text": "Az ütemezést kiváltó esemény lehet egy folyamat befejeződése, egy várakozási igény vagy egy időzítő megszakítás.", "answer": true },
-  { "text": "Az RR algoritmus jellemzője a konvoj hatás, mivel a hosszú folyamatok hátráltatják a rövideket.", "answer": false },
-  { "text": "A szálak önálló folyamatok, amelyek külön memóriaterületen futnak.", "answer": false },
-  { "text": "Minden szálnak van saját utasításszámlálója és regiszterkészlete.", "answer": true },
-  { "text": "A szálak öröklik a folyamat által lefoglalt erőforrásokat.", "answer": true },
-  { "text": "Egy szálhoz tartozik saját veremtár.", "answer": true },
-  { "text": "A kritikus szakaszban több folyamat is tartózkodhat egyszerre.", "answer": false },
-  { "text": "A kritikus szakaszban nem okozhat megszakítást vagy kivételt a folyamat.", "answer": true },
-  { "text": "Az aszimmetrikus kommunikációban a küldő és fogadó fél portot használ.", "answer": true },
-  { "text": "A kliens-szerver modell a vevő oldali portot használja a kommunikációhoz.", "answer": true },
-  { "text": "A farmer-worker modell a fogadó oldali portot használja a kommunikációhoz.", "answer": false },
-  { "text": "A PRAM modellben egy memóriarekesz egyszerre több folyamat által is elérhető.", "answer": true },
-  { "text": "Az olvasás-olvasás ütközés problémát okozhat a PRAM modellben.", "answer": false },
-  { "text": "A szálak közötti kommunikáció minden esetben üzenetküldésen alapul.", "answer": false },
-  { "text": "A versengő folyamatok csak akkor ismerik egymást, ha közös erőforrást használnak.", "answer": true },
-  { "text": "A közös memória kommunikáció esetében a kommunikációt az OS biztosítja.", "answer": true },
-  { "text": "A csoportkommunikáció során az üzenetet a csoport minden tagja megkapja.", "answer": true },
-  { "text": "A szálak és folyamatok között a fő különbség az ütemezési stratégia.", "answer": false },
-  { "text": "A szálak közös virtuális memóriateret használnak a folyamathoz.", "answer": true },
-  { "text": "A PRAM modell nem támogat párhuzamos írási műveleteket.", "answer": false },
-  { "text": "A küldő oldali portnál a Send művelet címzés nélkül is végrehajtható.", "answer": true },
-  { "text": "Az aszimmetrikus kommunikáció mindig gyorsabb, mint a szimmetrikus.", "answer": false },
-  { "text": "Az együttműködő folyamatok közös célt hajtanak végre.", "answer": true },
-  { "text": "A PRAM modell rekeszenként címzést használ.", "answer": true },
-  { "text": "Az aszimmetrikus kommunikációban mindig meg kell adni a fogadó folyamat azonosítóját.", "answer": false },
-  { "text": "A közös memória modellhez nem szükséges külön szinkronizációs mechanizmus.", "answer": false },
-  { "text": "A szálak gyorsabban váltanak egymás között, mint a folyamatok.", "answer": true },
-  { "text": "A kritikus szakaszban egyszerre csak egy folyamat tartózkodhat.", "answer": true },
-  { "text": "A szoftveres szinkronizáció gyorsabb, mint a hardveres megoldás.", "answer": false },
-  { "text": "A kritikus szakasz elejét és végét az operációs rendszernek kell ismernie.", "answer": true },
-  { "text": "A TestAndSet művelet segítségével biztosítható a kölcsönös kizárás.", "answer": true },
-  { "text": "A Swap algoritmus kulcs változókkal és lakat logikai változóval dolgozik.", "answer": true },
-  { "text": "A monitor programozási szerkezetben minden kritikus erőforráshoz külön eljárás tartozik.", "answer": true },
-  { "text": "A monitor szerkezete nem igényel feltételváltozót.", "answer": false },
-  { "text": "A monitor objektum tartalmazhat osztott adatot és eljárásokat is.", "answer": true },
-  { "text": "A szemaforok egyszerre csak egy kritikus szakaszhoz használhatóak.", "answer": false },
-  { "text": "Az éheztetés kizárólag hardveres hibák miatt alakulhat ki.", "answer": false },
-  { "text": "A holtpont négy feltétele közül a kölcsönös kizárás mindig fennáll, ha nem megosztható erőforrásokról van szó.", "answer": true },
-  { "text": "A foglalás és várakozás feltétele teljesen kiiktatható a megfelelő algoritmusokkal.", "answer": true },
-  { "text": "A holtpont egy olyan állapot, amikor egyetlen folyamat sem tud előrehaladni.", "answer": true },
-  { "text": "A holtpont nem okoz rendszerleállást, csak az adott folyamatok blokkolódnak.", "answer": false },
-  { "text": "Az erőforrás-gráfban a hurok megléte a holtpont biztos jele.", "answer": true },
-  { "text": "A preemptív erőforrások esetében a holtpont nem alakulhat ki.", "answer": false },
-  { "text": "Az erőforrások kiosztásakor az operációs rendszernek ismernie kell a maximális igényeket.", "answer": true },
-  { "text": "A Bankár algoritmus célja a holtpont feloldása utólagos folyamatleállítással.", "answer": false },
-  { "text": "A Bankár algoritmus csak akkor biztosítja a holtpont elkerülését, ha a rendszer biztonságos állapotban van.", "answer": true },
-  { "text": "A hierarchikus erőforrás-számozás megakadályozza a körkörös várakozást.", "answer": true },
-  { "text": "A hierarchikus sorszám kijelölés rugalmas és minden környezetben jól működik.", "answer": false },
-  { "text": "Az éheztetés olyan probléma, amikor egy folyamat akár a végtelenségig is várakozhat erőforrásra.", "answer": true },
-  { "text": "Az éheztetés megoldható öregítés (aging) technikával.", "answer": true },
-  { "text": "A nem preemptív erőforrásokat bármikor elvehetjük a folyamatoktól.", "answer": false },
-  { "text": "A holtpont megelőzésére szolgáló módszerek nem minden esetben költséghatékonyak.", "answer": true },
-  { "text": "Az operációs rendszer képes a holtpont automatikus felismerésére minden esetben.", "answer": false },
-  { "text": "Ha a rendszer nem tartalmaz hurkot, akkor biztosan holtpontmentes.", "answer": true },
-  { "text": "Az erőforrás foglalása után azonnal megszűnik a várakozás.", "answer": false },
-  { "text": "Az éheztetés kialakulásának lehetősége a holtpont kezelésétől független.", "answer": true },
-  { "text": "A holtpont mindig detektálható a megfelelő algoritmusok segítségével.", "answer": false },
-  { "text": "A holtpont megszüntetése veszteségmentesen megoldható.", "answer": false },
-  { "text": "Az erőforrás-gráf minden hurokja holtpontot jelez.", "answer": false },
-  { "text": "A foglalás és várakozás együttes feltétele elegendő a holtpont kialakulásához.", "answer": false },
-  { "text": "Az egypéldányos erőforrások mindig kizárólagos használatot igényelnek.", "answer": true },
-  { "text": "A holtpont kezelése helyett gyakran hatékonyabb a megelőzése.", "answer": true },
-  { "text": "A lapozás fix méretű memóriablokkokkal dolgozik.", "answer": true },
-  { "text": "A szegmensszervezés jellemzően rögzített méretű blokkokkal dolgozik.", "answer": false },
-  { "text": "A lapszervezésnél a belső tördelődés a kihasználatlan területek miatt alakul ki.", "answer": true },
-  { "text": "A szegmensszervezésnél a külső tördelődés problémája jelentkezik.", "answer": true },
-  { "text": "A kombinált szervezés a lapozás és a szegmensszervezés előnyeit ötvözi.", "answer": true },
-  { "text": "A logikai cím két komponensből áll: szegmens/lapazonosító és eltolás.", "answer": true },
-  { "text": "A laphiba akkor fordul elő, ha egy program olyan memórialapot hivatkozik meg, amely nincs a RAM-ban.", "answer": true },
-  { "text": "Az igény szerinti lapozás során minden szükséges lapot előre betölt a rendszer.", "answer": false },
-  { "text": "Az előretekintő lapozás (pre-fetch) segíthet csökkenteni a laphibák számát.", "answer": true },
-  { "text": "Az optimális lapcsere algoritmus a jövőbeni hivatkozások ismeretében választja ki a lecserélendő lapot.", "answer": true },
-  { "text": "Az LRU algoritmus a legutoljára használt lapokat tartja a memóriában.", "answer": true },
-  { "text": "A FIFO algoritmus a legrégebbi lapot cseréli le.", "answer": true },
-  { "text": "Az LFU algoritmus a legritkábban használt lapokat cseréli le.", "answer": true },
-  { "text": "A Second Chance algoritmus a laphoz tartozó „referencia bitet” is figyelembe veszi.", "answer": true },
-  { "text": "A page table (laptábla) tartalmazza a logikai címekhez tartozó fizikai címeket.", "answer": true },
-  { "text": "A TLB (Translation Lookaside Buffer) a laphibák számát növeli.", "answer": false },
-  { "text": "A TLB gyorsítótár a legutóbb használt címleképezések gyors eléréséhez.", "answer": true },
-  { "text": "A virtuális memória fogalma azt jelenti, hogy a program nagyobb címteret lát, mint a fizikai memória mérete.", "answer": true },
-  { "text": "A belső tördelődés csak a szegmensszervezésnél jelentkezik.", "answer": false },
-  { "text": "Az operációs rendszer automatikusan oldja meg a logikai és fizikai címek közötti átalakítást.", "answer": true },
-  { "text": "A lapcsere algoritmusok célja, hogy minimalizálják a laphibák számát.", "answer": true },
-  { "text": "A ReadyBoost technológia a memóriakezelést támogatja USB eszközök segítségével.", "answer": true },
-  { "text": "A Copy-on-Write mechanizmus célja a memóriahatékonyság növelése.", "answer": true },
-  { "text": "A kernel memória területe sosem lehet lapozott.", "answer": false },
-  { "text": "A rendszer cache nem befolyásolja a memóriakezelési döntéseket.", "answer": false },
-  { "text": "Az IA-64 architektúra támogatja a 64 bites címtartományokat.", "answer": true },
-  { "text": "A szabad memória mindig azonnal elérhető a folyamatok számára.", "answer": false },
-  { "text": "A logikai és fizikai címek mindig megegyeznek.", "answer": false },
-  { "text": "A Superfetch a gyakran használt adatokat előre betölti a memóriába.", "answer": true },
-  { "text": "A PAE (Physical Address Extension) segítségével 32 bites rendszerek is kezelhetnek 64 GB memóriát.", "answer": true },
-  { "text": "A fájl logikai információk gyűjteménye, amelyet egyedileg azonosíthatunk a fájlnév segítségével.", "answer": true },
-  { "text": "Az állománykezelő rendszer nem része az operációs rendszernek, hanem különálló alkalmazás.", "answer": false },
-  { "text": "A fájlrendszer lehetővé teszi a felhasználó számára a fizikai tárolók elérését megfelelő jogosultságokkal.", "answer": true },
-  { "text": "A könyvtárak csak fájlokat tartalmazhatnak, más könyvtárat nem.", "answer": false },
-  { "text": "A könyvtár bejegyzései tartalmazhatják a fájlok nevét, típusát és hozzáférési jogait.", "answer": true },
-  { "text": "A könyvtár bejegyzései tartalmazzák a fájl tartalmát is.", "answer": false },
-  { "text": "A soros hozzáférés azt jelenti, hogy csak a fájl elejétől lehet olvasni.", "answer": true },
-  { "text": "A közvetlen elérés esetében meg kell adni a fájlon belüli cím sorszámát.", "answer": true },
-  { "text": "Az index-szekvenciális elérés lehetővé teszi a gyors keresést a rekordok között.", "answer": true },
-  { "text": "Az index-szekvenciális elérésnél nincs szükség indexállományokra.", "answer": false },
-  { "text": "A láncolt tárolás előnye, hogy nem igényel folyamatos lemezterületet.", "answer": true },
-  { "text": "Az indexelt tárolás során minden fájlhoz csak egy indexblokk szükséges.", "answer": false },
-  { "text": "Az indexelt tárolás előnye, hogy a blokkok közvetlenül elérhetők.", "answer": true },
-  { "text": "Az indexelt tárolásnál a kis fájlok esetében nincs pazarlás.", "answer": false },
-  { "text": "A szabad helyek kezelése megoldható bittérképes ábrázolással.", "answer": true },
-  { "text": "A bittérképes megoldás előnye, hogy könnyen kijelölhetők az egymás melletti szabad blokkok.", "answer": true },
-  { "text": "A láncolt listás megoldás nem igényel plusz tárterületet a szabad blokkok követéséhez.", "answer": false },
-  { "text": "A szabad blokkok csoportos láncolása gyorsabb, mint az egyes blokkok láncolása.", "answer": true },
-  { "text": "Az egybefüggő szabad területek leírása hatékony megoldás a lemezterület kezelésére.", "answer": true },
-  { "text": "Az FAT tábla nem tartalmaz információt a szabad blokkokról.", "answer": false },
-  { "text": "Az FAT tábla segítségével a szabad és a foglalt blokkok is nyilvántarthatók.", "answer": true },
-  { "text": "Az FAT tábla csak egy példányban tárolódik a lemezen.", "answer": false },
-  { "text": "Az NTFS rendszer támogatja a fájlok jogosultságkezelését és a titkosítást.", "answer": true },
-  { "text": "Az NTFS támogatja a fájlok tömörítését.", "answer": true },
-  { "text": "Az NTFS rendszer nem alkalmas nagy méretű lemezek kezelésére.", "answer": false },
-  { "text": "Az állományokhoz rendelt attribútumok nem változtathatók meg a fájl tartalmának módosítása nélkül.", "answer": false },
-  { "text": "A fájl megnyitása során ellenőrzik a jogosultságokat.", "answer": true },
-  { "text": "A fájlhoz tartozó blokkok fizikai címeit a könyvtár bejegyzésében tárolják.", "answer": false },
-  { "text": "A hozzáírás művelete növeli a fájl méretét.", "answer": true },
-  { "text": "Az állomány törlése során a foglalt blokkok automatikusan felszabadulnak.", "answer": true },
-  { "text": "A könyvtárstruktúrák lehetnek fa és gráf alapúak.", "answer": true },
-  { "text": "A könyvtárak hierarchikus szerveződése lehetővé teszi az alárendelt könyvtárak létrehozását.", "answer": true },
-  { "text": "Az operációs rendszer minden fájlt külön folyamatként kezel.", "answer": false },
-  { "text": "Az attribútumok között lehet módosítási idő, jogosultság, tulajdonos is.", "answer": true },
-  { "text": "A fájlrendszerek nem tárolnak információt a fájlok típusáról.", "answer": false },
-  { "text": "A fájlok és könyvtárak jogai csak a tulajdonos által módosíthatók.", "answer": false },
-  { "text": "Az I/O alrendszer szolgáltatásait a fájlkezelő rendszer is használja.", "answer": true },
-  { "text": "A könyvtárak kizárólag a merevlemezen tárolhatók, nem lehetnek más típusú háttértáron.", "answer": false },
-  { "text": "A dinamikus helygazdálkodás célja a hatékony tárhasználat.", "answer": true },
-  { "text": "A fájlok blokkjainak logikai összefűzése nem szükséges a láncolt tárolásban.", "answer": false },
-  { "text": "A perifériák a számítógép beágyazott részei, a CPU részei.", "answer": false },
-  { "text": "A Human Interface Devices (HID) kategóriába tartozik a billentyűzet, egér és monitor.", "answer": true },
-  { "text": "A LAN és WLAN a gép-gép kapcsolattartás perifériái közé tartoznak.", "answer": true },
-  { "text": "Az USB egy soros csatlakozási szabvány.", "answer": true },
-  { "text": "A vezérlőegység a periféria része, amely közvetlenül vezérli az eszköz működését.", "answer": true },
-  { "text": "A perifériák működési sebessége jellemzően gyorsabb, mint a CPU-é.", "answer": false },
-  { "text": "Az operációs rendszernek nem kell foglalkoznia a perifériákkal, azokat a BIOS kezeli.", "answer": false },
-  { "text": "Az API (Application Interface) egységes felületet biztosít a perifériák kezeléséhez.", "answer": true },
-  { "text": "A logikai perifériák kezelését általában eszközmeghajtók (Device Driver-ek) segítik.", "answer": true },
-  { "text": "A Device Driver célja a hatékony perifériakezelés biztosítása.", "answer": true },
-  { "text": "A párhuzamos perifériakezelés csökkenti a rendszer teljesítményét.", "answer": false },
-  { "text": "Az I/O műveletek során az adatblokkokat a CPU és a periféria között mozgatják.", "answer": true },
-  { "text": "Az IOCB (Input/Output Control Block) az I/O műveletek paramétereit tartalmazza.", "answer": true },
-  { "text": "Az alacsony szintű I/O kezelés három művelete a Start, Wait és Stop.", "answer": true },
-  { "text": "Az IOCB csak akkor törölhető a várakozási sorból, ha nincs aktív átvitel.", "answer": true },
-  { "text": "Az I/O műveletek adatmozgatásának legfontosabb paraméterei a forrás, a cél és az adatméret.", "answer": true },
-  { "text": "A logikai periféria kezeléshez nincs szükség eszközmeghajtókra.", "answer": false },
-  { "text": "Az operációs rendszer csak a fizikai perifériákat kezeli, a logikai perifériákra nincs rálátása.", "answer": false },
-  { "text": "Az API réteg a felhasználói programok és a perifériák közötti közvetítő.", "answer": true },
-  { "text": "Az eszközmeghajtók a hardverhez közvetlenül csatlakoznak, nem igényelnek OS támogatást.", "answer": false },
-  { "text": "Az IRQ (Interrupt Request) és a DMA (Direct Memory Access) a készülékkezelő rétegben használatos.", "answer": true },
-  { "text": "Az adatblokkok mozgatása nem igényel szinkronizációt a CPU és a periféria között.", "answer": false },
-  { "text": "Az IOCB állapotai között lehet „fut”, „várakozik” és „befejeződött”.", "answer": true },
-  { "text": "Az adatátvitel irányának meghatározása az adatforrás és -cél szerepétől függ.", "answer": true },
-  { "text": "A Human Interface Devices mindig valós idejű kapcsolatot igényelnek a CPU-val.", "answer": false },
-  { "text": "A perifériák működése független a csatlakozási szabványtól.", "answer": false },
-  { "text": "A DMA lehetővé teszi, hogy az adatátvitel a CPU közreműködése nélkül történjen.", "answer": true },
-  { "text": "Az eszközmeghajtók mindig a kernel mód részei.", "answer": true },
-  { "text": "A párhuzamos perifériakezelés növeli a rendszer hatékonyságát.", "answer": true },
-  { "text": "A Device Interface (DI) egységes csatlakozófelületet biztosít az I/O eszközökhöz.", "answer": true },
-  { "text": "Az operációs rendszer felelős a felhasználói azonosításért és a hozzáférési jogok ellenőrzéséért.", "answer": true },
-  { "text": "A védelem csak szoftveres megoldásokból áll.", "answer": false },
-  { "text": "A Windows NT támogatja a Unicode karakterkódolást.", "answer": true },
-  { "text": "A vírusok minden esetben fájlokat fertőznek meg.", "answer": false },
-  { "text": "A trójai programok nem képesek rejtőzködni más szoftverek mögött.", "answer": false },
-  { "text": "Az adathalászat célja a felhasználói adatok megszerzése.", "answer": true },
-  { "text": "A címhamisítás (spoofing) során az üzenet feladója valótlan információt ad meg.", "answer": true },
-  { "text": "A pszichológiai manipuláció célja a felhasználó rábeszélése valamilyen tevékenységre.", "answer": true },
-  { "text": "A zsarolóvírusok célja az adatok titkosítása és váltságdíj követelése.", "answer": true },
-  { "text": "A biztonsági másolatok feleslegesek, ha a rendszer jól konfigurált.", "answer": false },
-  { "text": "A védelmi tartomány (domain) meghatározza, hogy egy folyamat mely erőforrásokat érhet el.", "answer": true },
-  { "text": "A védelmi mátrix csak statikus lehet.", "answer": false },
-  { "text": "A védelem minden esetben egyetlen tényezőn múlik.", "answer": false },
-  { "text": "Az elosztott rendszerekben a védelem kiterjed a hálózati kommunikációra is.", "answer": true },
-  { "text": "A tűzfal képes megakadályozni minden típusú támadást.", "answer": false },
-  { "text": "Az erőforrás-kezelés szerves része a jogosultságok kiosztása.", "answer": true },
-  { "text": "A Microsoft célja a Windows NT esetében a könnyen továbbfejleszthető és skálázható rendszer kialakítása volt.", "answer": true },
-  { "text": "A Windows NT nem képes több processzor támogatására.", "answer": false },
-  { "text": "A Windows NT-n belüli folyamatok nem befolyásolhatják egymás működését.", "answer": true },
-  { "text": "A Windows NT Server és Workstation verziói azonos kvantumidőket használnak.", "answer": false },
-  { "text": "A Windows NT hibrid kernel architektúrával rendelkezik.", "answer": true },
-  { "text": "A rendszer stabilitásának növelése érdekében a Windows NT különböző funkciókat külön rétegekbe szervez.", "answer": true },
-  { "text": "Az NT rendszer prioritási szintjei teljesen statikusak, nem módosíthatók futásidőben.", "answer": false },
-  { "text": "A Windows NT az API-n keresztül biztosít kompatibilitást a régebbi rendszerekkel.", "answer": true },
-  { "text": "A Windows NT-n a megszakítások kezelését kizárólag a kernel végzi.", "answer": true },
-  { "text": "A Microsoft operációs rendszereiben nincs lehetőség Unicode karakterek használatára.", "answer": false },
-  { "text": "Az NT rendszer nem képes elosztott rendszerek működtetésére.", "answer": false },
-  { "text": "A jogosultságok felhasználónként és csoportonként is definiálhatók.", "answer": true },
-  { "text": "Az NT rendszer képes együttműködni különböző hardver architektúrákkal.", "answer": true },
-  { "text": "A védelem és a biztonság nem igényel emberi tényezőt, csak technológiai megoldásokat.", "answer": false },
-  { "text": "A Windows NT kernel architektúrája réteges szerkezetű.", "answer": true },
-  { "text": "A Win32 API nem része a Windows NT rendszernek, külső fejlesztők biztosítják.", "answer": false },
-  { "text": "A Windows NT támogatja a 64-bites alkalmazások futtatását natív módban.", "answer": true },
-  { "text": "A WoW64 alrendszer lehetővé teszi a 32-bites programok futtatását 64-bites rendszereken.", "answer": true },
-  { "text": "A Windows NT csak 64-bites rendszeren képes működni.", "answer": false },
-  { "text": "Az objektumkezelő felelős a rendszer erőforrásainak egységes eléréséért.", "answer": true },
-  { "text": "A Windows NT-ben minden objektumot a kernel kezel.", "answer": false },
-  { "text": "Az objektumok kezelését és védelmét az executive réteg valósítja meg.", "answer": true },
-  { "text": "Az objektumok elérhetőségét handle-ök segítségével biztosítják.", "answer": true },
-  { "text": "A Windows NT nem támogatja a kis- és nagybetű megkülönböztetést a fájlnevekben.", "answer": false },
-  { "text": "A Windows NT eseménynaplózása a felhasználói szintű folyamatokra korlátozódik.", "answer": false },
-  { "text": "Az Exception Dispatcher kezeli a bekövetkező kivételeket.", "answer": true },
-  { "text": "A trap kezelés során a CPU user módból kernel módba vált.", "answer": true },
-  { "text": "A szálak kezelése során minden szálnak egyedi azonosítója (Thread ID) van.", "answer": true },
-  { "text": "Az NT rendszerben a folyamatok nem rendelkeznek saját virtuális memória címtérrel.", "answer": false },
-  { "text": "A Windows NT folyamatainak legalább egy szála van, amely elinduláskor automatikusan futni kezd.", "answer": true },
-  { "text": "A Windows NT rendszerében a KTHREAD tartalmazza a szálütemezéshez kapcsolódó adatokat.", "answer": true },
-  { "text": "A Win32 API függvényhívások minden esetben közvetlenül a kernelbe jutnak.", "answer": false },
-  { "text": "Az NT rendszerben a szolgáltatások user módban futnak.", "answer": true },
-  { "text": "Az SMSS (Session Manager) a felhasználói fiókok kezeléséért felelős.", "answer": false },
-  { "text": "Az NT rendszerben a LOGON folyamat felelős a felhasználói bejelentkezésért.", "answer": true },
-  { "text": "Az NT rendszerben a Service Controller indítja és felügyeli a szolgáltatásokat.", "answer": true },
-  { "text": "A Windows NT alrendszerei nem kommunikálnak egymással.", "answer": false },
-  { "text": "A Windows NT-ben a megszakításokat a kernel kezeli.", "answer": true },
-  { "text": "A megszakítások mindig hardveres eredetűek.", "answer": false },
-  { "text": "Az NT kernel architektúrája támogatja a multiprocesszoros környezetet.", "answer": true },
-  { "text": "A kvantumidő minden szál esetében azonos a Windows NT Workstation és Server verziókban.", "answer": false },
-  { "text": "A Windows NT kernelében található a Trap Dispatcher, amely a kivételek kezeléséért felelős.", "answer": true },
-  { "text": "A Windows NT alrendszereinek működése kliens-szerver alapú.", "answer": true },
-  { "text": "Az NT rendszerben az objektumkezelő nem biztosít névteret az objektumok számára.", "answer": false },
-  { "text": "Az elosztott rendszerek célja többek között a párhuzamos feldolgozás és a hibatűrés biztosítása.", "answer": true },
-  { "text": "Az elosztott rendszerek csak homogén (azonos típusú) hardver környezetben működhetnek.", "answer": false },
-  { "text": "A konkurens működés jellemzője, hogy több folyamat is futhat egyszerre a rendszerben.", "answer": true },
-  { "text": "Az átlátszóság biztosítja, hogy a felhasználó ne érzékelje az elosztott rendszer összetettségét.", "answer": true },
-  { "text": "Az elosztott rendszerek nem támogathatják a redundanciát.", "answer": false },
-  { "text": "A hibatűrés célja a rendszer stabilitásának fenntartása hibák esetén is.", "answer": true },
-  { "text": "Az erőforráskezelő feladata a rendszer erőforrásainak megosztása és elérhetőségének biztosítása.", "answer": true },
-  { "text": "A nyílt elnevezési rendszer nem teszi lehetővé a szoftveres bővítéseket.", "answer": false },
-  { "text": "Az elosztott rendszerek minden esetben fix topológiával rendelkeznek.", "answer": false },
-  { "text": "A virtualizáció lehetővé teszi, hogy több virtuális gép fusson egy fizikai gépen.", "answer": true },
-  { "text": "A virtualizáció nem támogatja a hardver erőforrások megosztását.", "answer": false },
-  { "text": "A felhő alapú rendszerek jellemzője a rugalmas erőforrás-allokáció.", "answer": true },
-  { "text": "A felhőszolgáltatások típusai közé tartozik az IaaS, PaaS és SaaS.", "answer": true },
-  { "text": "A mobil operációs rendszerek nem különböznek a desktop rendszerektől.", "answer": false },
-  { "text": "A biztonság több tényezős megközelítést igényel: szoftveres, hardveres és emberi tényezők is fontosak.", "answer": true },
-  { "text": "Az átlátszóság fogalma szerint a rendszer felhasználója számára a háttérben zajló folyamatok rejtve maradnak.", "answer": true },
-  { "text": "A cloud rendszerek csak privát hálózatban működnek.", "answer": false },
-  { "text": "A szoftveres frissítések nem befolyásolják a rendszer biztonságát.", "answer": false },
-  { "text": "A jövőbeli rendszerek fejlődése várhatóan a mesterséges intelligencia integrációja felé halad.", "answer": true },
-  { "text": "A mobil rendszerek soha nem használnak hálózati kommunikációt.", "answer": false },
-  { "text": "A mobil rendszerek fejlesztése során kiemelt szempont az energiahatékonyság.", "answer": true },
-  { "text": "A virtualizáció csak a szoftverek szintjén valósítható meg, hardveres támogatásra nincs szükség.", "answer": false },
-  { "text": "Az elosztott rendszerek átlátszósága lehet hozzáférési, hely-, vagy hibakezelési típusú.", "answer": true },
-  { "text": "A virtualizáció csökkentheti a rendszer hardver költségeit.", "answer": true },
-  { "text": "A felhasználók egy elosztott rendszerben mindig pontosan ismerik a szolgáltatások helyét.", "answer": false },
-  { "text": "A hibakezelés célja, hogy a rendszer hibák esetén is működőképes maradjon.", "answer": true },
-  { "text": "A nyílt rendszerek jellemzője, hogy bővíthetők és heterogén hardvereket is kezelhetnek.", "answer": true },
-  { "text": "A cloud rendszerekben minden felhasználó kizárólag saját gépen dolgozik.", "answer": false },
-  { "text": "A konkurens működéshez nincs szükség több processzorra.", "answer": false },
-  { "text": "A jövő rendszerei várhatóan egyre inkább támogatják a hibatűrést és a skálázhatóságot.", "answer": true },
-  { "text": "A megszakítások és kivételek mindig hardver alapúak.", "answer": false },
-  { "text": "A Windows NT alapú rendszerekben a Trap Dispatcher dönt a probléma kezeléséről.", "answer": true },
-  { "text": "A Windows NT-ben a szinkronizációt főleg a Spin-Lock segítségével oldják meg.", "answer": true },
-  { "text": "A Spin-Lock egy erőforrásra vonatkozó zárolási mechanizmus.", "answer": true },
-  { "text": "A Windows NT rendszerben az objektumokhoz a handle biztosít hozzáférést.", "answer": true },
-  { "text": "A handle egy egyedi azonosító, ami az objektumhoz való hozzáférést teszi lehetővé.", "answer": true },
-  { "text": "A Windows NT rendszerek nem támogatják a nagy- és kisbetűk megkülönböztetését a fájlnevekben.", "answer": false },
-  { "text": "A szálak a folyamatok részei, nem teljesen önálló egységek.", "answer": true },
-  { "text": "Egy szálhoz tartozik két verem: kernel és user módú futáshoz.", "answer": true },
-  { "text": "A kernel szálblokk (KTHREAD) tartalmazza a szálütemezéshez és szinkronizációhoz szükséges adatokat.", "answer": true },
-  { "text": "A Windows NT-ben a folyamatok és szálak prioritásai teljesen statikusak, nem változnak futás közben.", "answer": false },
-  { "text": "A CreateProcess függvény hívásával mindig egy prioritási osztályt is meg kell adni.", "answer": false },
-  { "text": "A Windows NT rendszerben a kvantum időszelet lejárta után a szál futása mindig megszakad.", "answer": true },
-  { "text": "A Windows NT rendszerben a prioritási szintek 0-tól 31-ig terjednek.", "answer": true },
-  { "text": "A rendszer általában a legnagyobb prioritású, futásra kész szálat választja futásra.", "answer": true },
-  { "text": "A Windows NT-ben a Dispatcher rutinok kizárólag IRQL 0 szinten futnak.", "answer": false },
-  { "text": "A kvantum időszelet Windows NT Workstation esetén kisebb, mint Windows NT Server esetén.", "answer": true },
-  { "text": "Az NT rendszer ütemezése teljesen fix, nem preemptív.", "answer": false },
-  { "text": "A szál állapotai között megtalálható a Ready, Running és Waiting állapot is.", "answer": true },
-  { "text": "Az átmeneti (Transition) állapot csak akkor jön létre, ha a szál veremtára kilapozódott.", "answer": true },
-  { "text": "A szál létrehozása során a PspCreateThread hív meg több segédfüggvényt.", "answer": true },
-  { "text": "A szálak prioritása a folyamat prioritásától teljesen független.", "answer": false },
-  { "text": "A CreateProcess hívás után a kezdeti szál automatikusan elindul.", "answer": true },
-  { "text": "Az LPC (Local Procedure Call) csak felhasználói folyamatok közötti kommunikációra szolgál.", "answer": false },
-  { "text": "Az LPC üzenet méretétől függően puffer vagy megosztott memória is használható.", "answer": true },
-  { "text": "Az Executive objektumok jellemzően több kernel objektumból épülnek fel.", "answer": true },
-  { "text": "A Windows NT szinkronizációs objektumai lehetnek statikusak vagy dinamikusan kezeltek.", "answer": true },
-  { "text": "A Dispatcher Object típusok célja a várakoztatás és szinkronizáció kezelése.", "answer": true },
-  { "text": "A Windows NT nem támogatja a többprocesszoros ütemezést.", "answer": false },
-  { "text": "A processzor affinitás azt jelenti, hogy egy szál melyik processzoron futhat.", "answer": true },
-  { "text": "A Windows 10 memóriamegoszlás területén a 'Használatban' érték a folyamatok, illesztőprogramok és az operációs rendszer által használt memória mennyiségét jelzi.", "answer": true },
-  { "text": "A 'Módosított' memória terület nem kerül háttértárra.", "answer": false },
-  { "text": "A 'Készenléti' memória aktívan nem használt, gyorsítótárazott adatokat tartalmaz.", "answer": true },
-  { "text": "A 'Szabad' memória a rendszer által elsőként újrahasznosított terület.", "answer": true },
-  { "text": "A 'Gyorsítótárazott' memória teljesen kihasznált memóriaterületet jelöl.", "answer": false },
-  { "text": "A PAE (Physical Address Extension) lehetővé teszi, hogy 32-bites rendszerek 64 GB memóriát kezeljenek.", "answer": true },
-  { "text": "Az IA-64 architektúra kizárólag x86 processzorokhoz készült.", "answer": false },
-  { "text": "A Windows NT memóriakezelője felelős a logikai és fizikai címek transzformációjáért.", "answer": true },
-  { "text": "A virtuális memória telítődésekor a memóriakezelő a használt lapokat a háttértárra menti.", "answer": true },
-  { "text": "A Windows NT memóriakezelője nem támogatja a Memory Mapped Files megoldást.", "answer": false },
-  { "text": "A 32-bites Windows NT rendszerekben az alapértelmezett címterület 2GB az alkalmazások és 2GB az operációs rendszer számára.", "answer": true },
-  { "text": "A /3GB kapcsoló használatával a Windows NT 32-bites rendszerben 3GB-1GB arányra módosítható a címterület.", "answer": true },
-  { "text": "A 64-bites rendszerek címtartománya maximum 6.657GB a rendszer folyamatainak számára.", "answer": true },
-  { "text": "A Superfetch technológia a memóriában lévő lapokat 8 szintű prioritással kezeli.", "answer": true },
-  { "text": "A ReadyBoost technológia célja a memória bővítése USB eszközök segítségével.", "answer": false },
-  { "text": "A Windows NT rendszerek memóriakezelése nem tesz különbséget a lapozott és nem lapozott memória között.", "answer": false },
-  { "text": "A Copy-on-Write mechanizmus késlelteti a memória másolat elkészítését, amíg valóban szükséges nem lesz.", "answer": true },
-  { "text": "A Copy-on-Write technika lusta kiértékelés elvén működik.", "answer": true },
-  { "text": "A logikai memória címek mind a felhasználói, mind a kernel módú programok számára azonos elérésűek.", "answer": false },
-  { "text": "Az osztott memória lehetővé teszi, hogy ugyanazt az adatot több folyamat is elérhesse.", "answer": true },
-  { "text": "A szekció objektum (Section Object) az osztott memória kezelésének alapja.", "answer": true },
-  { "text": "A Windows NT memóriavédelme biztosítja, hogy a folyamatok ne férhessenek hozzá más folyamat memóriaterületéhez.", "answer": true },
-  { "text": "A kernel szinten futó modulok mindig elérhetők a felhasználói módú folyamatok számára.", "answer": false },
-  { "text": "Az ACL (Access Control List) szabályozza, hogy mely folyamatok érhetik el az adott memóriaterületet.", "answer": true },
-  { "text": "A Windows NT memóriakezelése nem engedélyezi a lapozást a kernel komponensek számára.", "answer": false },
-  { "text": "A nem lapozott memória tár (NonPaged Pool) soha nem kerül a háttértárra.", "answer": true },
-  { "text": "A Reserve művelet a virtuális címtartomány lefoglalását jelenti, de nem foglal tényleges fizikai memóriát.", "answer": true },
-  { "text": "A Commit művelet után az alkalmazás elkezdheti használni a lefoglalt memória területet.", "answer": true },
-  { "text": "A szálak user módú veremtárának foglalása során a Reserve és Commit mindig egy lépésben történik.", "answer": false },
-  { "text": "A logikai címtér tartalmazza az operációs rendszer és az alkalmazások memóriatartományát is.", "answer": true }
-]
-[
   {
     "text": "Az NT ütemezője a kernel módban, egy darab ütemező modulban található",
     "answer": false
@@ -994,6 +622,1717 @@
     "answer": true
   }
 ]
+[
+  {
+    "text": "Az operációs rendszer a hardver és a felhasználó közötti közvetítő.",
+    "answer": true
+  },
+  {
+    "text": "Az operációs rendszer célja kizárólag a processzor maximális kihasználása.",
+    "answer": false
+  },
+  {
+    "text": "A BIOS és az UEFI az operációs rendszer és a hardver közötti kapcsolatot biztosítja.",
+    "answer": true
+  },
+  {
+    "text": "Az első számítógépek rendelkeztek billentyűzettel és grafikus kijelzővel.",
+    "answer": false
+  },
+  {
+    "text": "A spooling technika lehetővé teszi több program egyidejű tárolását és feldolgozását.",
+    "answer": true
+  },
+  {
+    "text": "A multiprogramozott rendszerek egyszerre egy programot képesek futtatni.",
+    "answer": false
+  },
+  {
+    "text": "Az időosztásos rendszerek lehetővé teszik több felhasználó számára a számítógép egyidejű használatát.",
+    "answer": true
+  },
+  {
+    "text": "A kernel a felhasználó által közvetlenül vezérelhető programrész.",
+    "answer": false
+  },
+  {
+    "text": "A mikrokernelek csak minimális funkcionalitást biztosítanak a hardverhez való hozzáféréshez.",
+    "answer": true
+  },
+  {
+    "text": "A hibrid kernelek kizárólag a mikrokernelek elveit alkalmazzák.",
+    "answer": false
+  },
+  {
+    "text": "Az exokernelek nem biztosítanak állandó rendszermagot.",
+    "answer": true
+  },
+  {
+    "text": "A kernel és a user mód között nincs semmilyen kommunikáció.",
+    "answer": false
+  },
+  {
+    "text": "A Resident Monitor a memóriát több részre osztva kezeli.",
+    "answer": true
+  },
+  {
+    "text": "A szálak mindig osztoznak az erőforrásokon.",
+    "answer": false
+  },
+  {
+    "text": "A batch feldolgozás során az operátor feladata a programozás.",
+    "answer": false
+  },
+  {
+    "text": "A RAM jelentése random access memory, azaz véletlen hozzáférésű memória.",
+    "answer": true
+  },
+  {
+    "text": "A multiprogramozás célja a processzor kihasználtságának növelése.",
+    "answer": true
+  },
+  {
+    "text": "A spooling technika a processzor és a perifériák közti kapcsolatot gyorsítja.",
+    "answer": true
+  },
+  {
+    "text": "A kernel szintű szolgáltatások mind a felhasználói szinten futnak.",
+    "answer": false
+  },
+  {
+    "text": "A Windows Vista fejlesztése során a lassú kódoptimalizálásra építettek.",
+    "answer": true
+  },
+  {
+    "text": "A BIOS szerepe kizárólag a hardverek közötti kommunikáció biztosítása.",
+    "answer": false
+  },
+  {
+    "text": "A multiprogramozásban a processzor sosem várakozik perifériára.",
+    "answer": false
+  },
+  {
+    "text": "A spooling technika a mágneses háttértárat használja puffertárként.",
+    "answer": true
+  },
+  {
+    "text": "A kernel az operációs rendszer szíve, amely közvetlenül a hardverrel kommunikál.",
+    "answer": true
+  },
+  {
+    "text": "A mikrokernelek minden funkciót a kernelbe integrálnak.",
+    "answer": false
+  },
+  {
+    "text": "A monolitikus kernel egy nagy program, amely minden funkciót tartalmaz.",
+    "answer": true
+  },
+  {
+    "text": "A kernel általában több rétegből áll, amelyek hierarchikus szerkezetben helyezkednek el.",
+    "answer": true
+  },
+  {
+    "text": "A RAM memóriában az adatok tetszőleges sorrendben érhetők el.",
+    "answer": true
+  },
+  {
+    "text": "A kötegelt feldolgozás csökkentette a holtidőt az operátor bevonásával.",
+    "answer": true
+  },
+  {
+    "text": "A kernel részei közvetlenül a felhasználó által futtatott programokból állnak.",
+    "answer": false
+  }
+]
+[
+  {
+    "text": "A multiprogramozott rendszerek előtt a számítógépek kizárólag szekvenciálisan futtatták a programokat.",
+    "answer": true
+  },
+  {
+    "text": "A folyamat a számítási feladatok végrehajtásának alapegysége.",
+    "answer": true
+  },
+  {
+    "text": "A futásra kész állapotban lévő folyamat már rendelkezik a CPU-val.",
+    "answer": false
+  },
+  {
+    "text": "A Hyper-threading technológia a folyamatok számát növeli.",
+    "answer": false
+  },
+  {
+    "text": "A CPU időosztásos működése a rövid távú ütemező feladata.",
+    "answer": true
+  },
+  {
+    "text": "A megszakítás segítségével a futó folyamat sosem áll le.",
+    "answer": false
+  },
+  {
+    "text": "A környezetváltás során a futó folyamat állapota elmentésre kerül.",
+    "answer": true
+  },
+  {
+    "text": "A processzor igénybevétele az operációs rendszer működéséhez nem szükséges.",
+    "answer": false
+  },
+  {
+    "text": "A megszakításokat kizárólag programhibák okozhatják.",
+    "answer": false
+  },
+  {
+    "text": "A megszakítás lehet maszkolható vagy nem maszkolható.",
+    "answer": true
+  },
+  {
+    "text": "A megszakítás egy olyan művelet, amely a futó folyamat végrehajtását felfüggeszti.",
+    "answer": true
+  },
+  {
+    "text": "A folyamat vezérlési adatai tartalmazzák a programszámlálót is.",
+    "answer": true
+  },
+  {
+    "text": "A PCB tárolja a CPU-regiszterek aktuális állapotát is.",
+    "answer": true
+  },
+  {
+    "text": "A DMA segítségével a perifériák közvetlenül hozzáférhetnek a memóriához.",
+    "answer": true
+  },
+  {
+    "text": "Az I/O műveletek paramétereit a PCB-ben tároljuk.",
+    "answer": false
+  },
+  {
+    "text": "A folyamatok közötti váltás során a környezetet mindig el kell menteni.",
+    "answer": true
+  },
+  {
+    "text": "A processzorhoz egyszerre csak egy futó folyamat tartozhat.",
+    "answer": true
+  },
+  {
+    "text": "Az I/O műveletek nem szakíthatják meg a futó folyamatot.",
+    "answer": false
+  },
+  {
+    "text": "A nem maszkolható megszakításokat nem lehet késleltetni.",
+    "answer": true
+  },
+  {
+    "text": "Az IRQ-k maszkolható megszakítások.",
+    "answer": true
+  },
+  {
+    "text": "A folyamatok között oszthatatlan műveleteket tartalmazó folyamatok is lehetnek.",
+    "answer": true
+  },
+  {
+    "text": "Az operációs rendszer nem képes megszakítani a folyamatokat.",
+    "answer": false
+  },
+  {
+    "text": "A multiprogramozás nem biztosít párhuzamos működést.",
+    "answer": false
+  },
+  {
+    "text": "Az időosztásos rendszerek egyszerre több felhasználó számára biztosítanak működést.",
+    "answer": true
+  },
+  {
+    "text": "A megszakítások kizárólag hardverhibák esetén történnek.",
+    "answer": false
+  },
+  {
+    "text": "A rövid távú ütemező a CPU erőforrásainak elosztásáért felelős.",
+    "answer": true
+  },
+  {
+    "text": "A folyamatok szülei és gyerekei is azonosítókkal rendelkeznek.",
+    "answer": true
+  },
+  {
+    "text": "A környezetváltás során a teljes folyamatállapotot átmásoljuk a memóriába.",
+    "answer": true
+  },
+  {
+    "text": "A CPU-ütemezési információk tartalmazzák a prioritásokat és a jogosultságokat is.",
+    "answer": true
+  },
+  {
+    "text": "A processzek között csak a futási sorrend alapján történik váltás.",
+    "answer": false
+  }
+]
+[
+  {
+    "text": "Az ütemezés az ütemezendő események sorrendjének meghatározását jelenti.",
+    "answer": true
+  },
+  {
+    "text": "A rövid távú ütemező a CPU löket után fut le, ezért gyorsnak kell lennie.",
+    "answer": true
+  },
+  {
+    "text": "A preemptív ütemezésnél a futási jogot nem lehet elvenni az éppen futó folyamattól.",
+    "answer": false
+  },
+  {
+    "text": "A nem preemptív ütemezésnél a futási jog elvehető az éppen futó folyamattól.",
+    "answer": false
+  },
+  {
+    "text": "A Windows NT alapú rendszerek preemptív ütemezést használnak.",
+    "answer": true
+  },
+  {
+    "text": "A UNIX kernel módban preemptív, user módban nem preemptív ütemezést használ.",
+    "answer": false
+  },
+  {
+    "text": "Az ütemezést kiváltó események közé tartozik a futó folyamat befejeződése.",
+    "answer": true
+  },
+  {
+    "text": "Homogén rendszerek esetén minden CPU mag külön várakozási sort használ.",
+    "answer": false
+  },
+  {
+    "text": "Heterogén rendszerekben a folyamatok csak a nekik megfelelő utasításkészletű CPU-n futnak.",
+    "answer": true
+  },
+  {
+    "text": "A szimmetrikus ütemezésnél egyetlen CPU mag futtatja az ütemezőt.",
+    "answer": false
+  },
+  {
+    "text": "A CPU kihasználtság megmutatja, mennyi időt tölt a CPU a folyamatok végrehajtásával.",
+    "answer": true
+  },
+  {
+    "text": "Az átbocsátó képesség a processzor sebességét méri másodpercenkénti műveletek alapján.",
+    "answer": false
+  },
+  {
+    "text": "A várakozási idő azt mutatja meg, mennyi időt tölt egy munka várakozással.",
+    "answer": true
+  },
+  {
+    "text": "A válaszidő a felhasználói beavatkozásra adott válaszidőt jelenti.",
+    "answer": true
+  },
+  {
+    "text": "A közép távú ütemező a folyamatok háttértárra mozgatását ütemezi.",
+    "answer": true
+  },
+  {
+    "text": "A hosszú távú ütemező a CPU kihasználtságát optimalizálja közvetlenül.",
+    "answer": false
+  },
+  {
+    "text": "A periféria ütemezők döntik el a periféria kiszolgálási sorrendjét.",
+    "answer": true
+  },
+  {
+    "text": "A Round-Robin algoritmus nem preemptív ütemezési módszer.",
+    "answer": false
+  },
+  {
+    "text": "Az FCFS algoritmus nem preemptív.",
+    "answer": true
+  },
+  {
+    "text": "A legrövidebb löketidejű (SJF) algoritmus preemptív ütemezési módszer.",
+    "answer": false
+  },
+  {
+    "text": "A legrövidebb hátralévő idejű (SRTF) algoritmus preemptív.",
+    "answer": true
+  },
+  {
+    "text": "A HRR algoritmusban a prioritás számítása figyelembe veszi a várakozási időt is.",
+    "answer": true
+  },
+  {
+    "text": "A statikus többszintű sorok (SMQ) mentesek a kiéheztetéstől.",
+    "answer": false
+  },
+  {
+    "text": "A Multilevel Feedback Queues (MFQ) lehetőséget ad a folyamatok áthelyezésére a várakozási sorok között.",
+    "answer": true
+  },
+  {
+    "text": "A MFQ algoritmus nem támogatja a prioritások dinamikus változtatását.",
+    "answer": false
+  },
+  {
+    "text": "A statikus többszintű sorokban a folyamatok a sorok között szabadon mozoghatnak.",
+    "answer": false
+  },
+  {
+    "text": "A rövid távú ütemező a kernel része, ezért mindig a memóriában van.",
+    "answer": true
+  },
+  {
+    "text": "A legrövidebb löketidejű algoritmus csökkenti a konvoj hatás kialakulását.",
+    "answer": true
+  },
+  {
+    "text": "A HRR algoritmus a legjobb válaszarányt keresi, figyelembe véve a várakozási időt is.",
+    "answer": true
+  },
+  {
+    "text": "A legrövidebb löketidejű algoritmus mindig preemptív.",
+    "answer": false
+  }
+]
+[
+  {
+    "text": "A Windows NT alapú rendszerek szálütemezést használnak.",
+    "answer": true
+  },
+  {
+    "text": "A UNIX rendszerek szálütemezést alkalmaznak.",
+    "answer": false
+  },
+  {
+    "text": "A folyamatok a végrehajtás során több szálra bomolhatnak.",
+    "answer": true
+  },
+  {
+    "text": "A szálak az erőforrásokat a folyamatoktól öröklik.",
+    "answer": true
+  },
+  {
+    "text": "A nehéz súlyú folyamatok képesek több szálra bomlani.",
+    "answer": false
+  },
+  {
+    "text": "A könnyű súlyú folyamatok szálai osztoznak az erőforrásokon.",
+    "answer": true
+  },
+  {
+    "text": "A szálak váltásához szükség van környezetváltásra.",
+    "answer": false
+  },
+  {
+    "text": "A szálak párhuzamos végrehajtásúak lehetnek, ha a CPU engedi.",
+    "answer": true
+  },
+  {
+    "text": "A szálak váltása lassabb, mint a folyamatok váltása.",
+    "answer": false
+  },
+  {
+    "text": "A folyamatra jellemző elem például a memória címtartomány.",
+    "answer": true
+  },
+  {
+    "text": "A szálra jellemző elem például a regiszterek állapota.",
+    "answer": true
+  },
+  {
+    "text": "A verem nem tartozik a szálakhoz.",
+    "answer": false
+  },
+  {
+    "text": "A szálak adminisztratív információi külön tárolódnak.",
+    "answer": true
+  },
+  {
+    "text": "Független folyamatok nem mutatnak szinkronitást egymással.",
+    "answer": true
+  },
+  {
+    "text": "A versengő folyamatok mindig tudnak egymásról.",
+    "answer": false
+  },
+  {
+    "text": "A versengő folyamatok jellemzően perifériákért versengenek.",
+    "answer": true
+  },
+  {
+    "text": "Az együttműködő folyamatok közös célt valósítanak meg.",
+    "answer": true
+  },
+  {
+    "text": "Az együttműködő folyamatok nem cserélnek adatokat.",
+    "answer": false
+  },
+  {
+    "text": "Az adatcsere mindig közös memórián keresztül történik.",
+    "answer": false
+  },
+  {
+    "text": "A RAM modellben a memória rekeszek egyenként címezhetők.",
+    "answer": true
+  },
+  {
+    "text": "A PRAM modell lehetővé teszi a párhuzamos írást és olvasást.",
+    "answer": true
+  },
+  {
+    "text": "A CRCW PRAM modell minden párhuzamos műveletet enged.",
+    "answer": true
+  },
+  {
+    "text": "Az EREW PRAM modell engedi a párhuzamos írást.",
+    "answer": false
+  },
+  {
+    "text": "Az olvasás-olvasás ütközés nem okoz problémát.",
+    "answer": true
+  },
+  {
+    "text": "A memória rekesz tartalma egy írás után mindig a régi értéket tartalmazza.",
+    "answer": false
+  },
+  {
+    "text": "A pipelined működés azt jelenti, hogy az utasítások egymás után érkeznek.",
+    "answer": true
+  },
+  {
+    "text": "A pipelined utasítások interferálnak egymással.",
+    "answer": false
+  },
+  {
+    "text": "Az üzenettovábbításos kommunikáció csatornán keresztül történik.",
+    "answer": true
+  },
+  {
+    "text": "A SEND parancs a fogadó azonosítóját és az üzenetet tartalmazza.",
+    "answer": true
+  },
+  {
+    "text": "A RECEIVE parancs a küldő azonosítóját és az üzenetet tartalmazza.",
+    "answer": true
+  },
+  {
+    "text": "A közvetett kommunikáció postaládát használ.",
+    "answer": true
+  },
+  {
+    "text": "A postaláda végtelen kapacitású.",
+    "answer": false
+  },
+  {
+    "text": "Az aszimmetrikus kommunikáció során a port megnevezése elegendő.",
+    "answer": true
+  },
+  {
+    "text": "A farmer-worker modellben a fogadó oldal a feladatot kiosztó szerepét tölti be.",
+    "answer": true
+  },
+  {
+    "text": "A csoportkommunikáció során csak egy folyamat kapja meg az üzenetet.",
+    "answer": false
+  }
+]
+[
+  {
+    "text": "A szinkronizáció célja a folyamatok közötti összehangolt együttműködés biztosítása.",
+    "answer": true
+  },
+  {
+    "text": "Az előidejűség azt jelenti, hogy a folyamatok műveletei időben átfedhetik egymást.",
+    "answer": false
+  },
+  {
+    "text": "A randevú esetén a folyamatok műveletei egyidejűleg hajtódnak végre.",
+    "answer": true
+  },
+  {
+    "text": "A kölcsönös kizárás célja, hogy a folyamatok szabadon hozzáférhessenek a kritikus szakaszokhoz.",
+    "answer": false
+  },
+  {
+    "text": "A kritikus szakaszban egyszerre több folyamat is tartózkodhat.",
+    "answer": false
+  },
+  {
+    "text": "A kritikus szakaszra belépés engedélyezése történhet szoftveres vagy hardveres úton.",
+    "answer": true
+  },
+  {
+    "text": "A szoftveres kritikus szakaszkezelés gyorsabb, mint a hardveres megoldás.",
+    "answer": false
+  },
+  {
+    "text": "A TestAndSet algoritmus egy darab logikai változót használ.",
+    "answer": true
+  },
+  {
+    "text": "A Swap algoritmusban minden folyamatnak saját kulcs változója van.",
+    "answer": true
+  },
+  {
+    "text": "A Swap algoritmusban a lakat értéke 1 azt jelenti, hogy a kritikus szakasz szabad.",
+    "answer": false
+  },
+  {
+    "text": "A TestAndSet és a Swap algoritmus is biztosítja a kölcsönös kizárást.",
+    "answer": true
+  },
+  {
+    "text": "A TestAndSet és a Swap algoritmus maradéktalanul teljesíti a várakozási idő minimalizálásának feltételét.",
+    "answer": false
+  },
+  {
+    "text": "A szemafor egy univerzális eszköz a szinkronizációs problémák megoldására.",
+    "answer": true
+  },
+  {
+    "text": "A szemafor 's' változó értéke lehet negatív.",
+    "answer": false
+  },
+  {
+    "text": "A szemafor inicializálható nem negatív értékre.",
+    "answer": true
+  },
+  {
+    "text": "A Wait művelet a szemafor 's' értékét csökkenti.",
+    "answer": true
+  },
+  {
+    "text": "A Wait művelet neve a holland 'proberen' szóból származik.",
+    "answer": true
+  },
+  {
+    "text": "A Signal művelet növeli a szemafor 's' értékét.",
+    "answer": true
+  },
+  {
+    "text": "A Signal művelet neve a holland 'verhogen' szóból ered.",
+    "answer": true
+  },
+  {
+    "text": "A bináris szemafor esetén a 's' változó értéke csak 0 vagy 1 lehet.",
+    "answer": true
+  },
+  {
+    "text": "A monitor objektum szinkronizált eljárásokat tartalmaz.",
+    "answer": true
+  },
+  {
+    "text": "A monitorban minden szálnak párhuzamosan hozzáférése van a megosztott adatokhoz.",
+    "answer": false
+  },
+  {
+    "text": "A monitor egyidejűleg több szál számára enged hozzáférést az eljárásokhoz.",
+    "answer": false
+  },
+  {
+    "text": "A monitor objektumot C.A.R. Hoare dolgozta ki.",
+    "answer": true
+  },
+  {
+    "text": "A monitor objektum használata magas szintű, objektumorientált nyelvekben különösen egyszerű.",
+    "answer": true
+  }
+]
+[
+  {
+    "text": "Az éheztetés folyamat szintű probléma.",
+    "answer": true
+  },
+  {
+    "text": "A holtpont operációs rendszer szintű probléma.",
+    "answer": true
+  },
+  {
+    "text": "A preemptív erőforrás például a processzoridő vagy a memória.",
+    "answer": true
+  },
+  {
+    "text": "A nem megszakítható erőforrások például a nyomtató vagy a szalagos egység.",
+    "answer": true
+  },
+  {
+    "text": "Az erőforrások osztályokba sorolhatók, például egypéldányos és többpéldányos osztályokba.",
+    "answer": true
+  },
+  {
+    "text": "A körkörös várakozás kialakulásához legalább három folyamat szükséges.",
+    "answer": false
+  },
+  {
+    "text": "A körkörös várakozás a holtpont egyik szükséges feltétele.",
+    "answer": true
+  },
+  {
+    "text": "Az erőforrás gráfban a hurok mindig elegendő feltétele a holtpontnak.",
+    "answer": false
+  },
+  {
+    "text": "A kizárólagosan használható erőforrások esetén a kölcsönös kizárás kiküszöbölhető.",
+    "answer": false
+  },
+  {
+    "text": "A holtpont kialakulásának négy szükséges feltétele: kölcsönös kizárás, foglalás és várakozás, kiszorításmentesség, körkörös várakozás.",
+    "answer": true
+  },
+  {
+    "text": "A kölcsönös kizárás megosztható erőforrásoknál nem szükséges.",
+    "answer": true
+  },
+  {
+    "text": "A foglalás és várakozás kizárható, ha a folyamatok nem tarthatnak egyszerre több erőforrást.",
+    "answer": true
+  },
+  {
+    "text": "A kiszorításmentesség esetén az erőforrást másik folyamat elveheti.",
+    "answer": false
+  },
+  {
+    "text": "A körkörös várakozás kizárható, ha az erőforrásokat hierarchikusan számozzuk.",
+    "answer": true
+  },
+  {
+    "text": "A hierarchikus erőforrás-sorszámok képesek követni a dinamikus igényeket.",
+    "answer": false
+  },
+  {
+    "text": "A holtpont elkerülésének egyik módszere a folyamatok újraindítása.",
+    "answer": true
+  },
+  {
+    "text": "A holtpontot mindig adatvesztés nélkül lehet megszüntetni.",
+    "answer": false
+  },
+  {
+    "text": "A bankár algoritmus Dijkstra nevéhez fűződik.",
+    "answer": true
+  },
+  {
+    "text": "A bankár algoritmus nem engedélyezi a folyamatok párhuzamos futását.",
+    "answer": false
+  },
+  {
+    "text": "A bankár algoritmus célja a rendszer biztonságos állapotban tartása.",
+    "answer": true
+  },
+  {
+    "text": "A biztonságos állapot nem jelent feltétlenül holtpontmentes állapotot.",
+    "answer": false
+  },
+  {
+    "text": "A nem biztonságos állapotban biztosan kialakul a holtpont.",
+    "answer": false
+  },
+  {
+    "text": "A bankár algoritmus feltételezi, hogy a folyamatok maximális erőforrás-igénye előre ismert.",
+    "answer": true
+  },
+  {
+    "text": "A bankár algoritmus képes kezelni a dinamikusan változó erőforrás-igényeket.",
+    "answer": false
+  },
+  {
+    "text": "Az erőforrások igénylése során a rendszer biztonságos állapotát kell figyelembe venni.",
+    "answer": true
+  },
+  {
+    "text": "A bankár algoritmus használata mindig garantálja a maximális teljesítményt.",
+    "answer": false
+  },
+  {
+    "text": "A bankár algoritmus az erőforrások hatékony kihasználására optimalizált.",
+    "answer": false
+  },
+  {
+    "text": "A holtpont kialakulása kizárólag nem preemptív erőforrások esetén lehetséges.",
+    "answer": false
+  },
+  {
+    "text": "A bankár algoritmus a folyamatok sorrendjét is figyelembe veszi a döntés során.",
+    "answer": true
+  },
+  {
+    "text": "A bankár algoritmus a folyamatok prioritását nem veszi figyelembe.",
+    "answer": true
+  }
+]
+[
+  {
+    "text": "A tárolóeszközök csoportosításának egyik fő szempontja, hogy kikapcsolás után megőrzi-e a tartalmát.",
+    "answer": true
+  },
+  {
+    "text": "A cache memória mindig a lassabb tárat gyorsítja.",
+    "answer": true
+  },
+  {
+    "text": "A cache memória gyorsítótár funkciót lát el, és mindig a CPU vezérli.",
+    "answer": false
+  },
+  {
+    "text": "Az operációs rendszer feladata a memória hatékony kezelése.",
+    "answer": true
+  },
+  {
+    "text": "A multiprogramozás nem igényel hatékony memóriakezelést.",
+    "answer": false
+  },
+  {
+    "text": "A fizikai és a logikai címtartomány összerendelése a memóriakezelés része.",
+    "answer": true
+  },
+  {
+    "text": "Az Overlay technika a memóriában való párhuzamos futást biztosítja.",
+    "answer": false
+  },
+  {
+    "text": "A DLL állományok dinamikusan töltődnek be a memóriába.",
+    "answer": true
+  },
+  {
+    "text": "A memória hézagmentes kitöltése a memóriakezelés egyik célja.",
+    "answer": true
+  },
+  {
+    "text": "A háttértár dinamikus használata csökkenti a memóriaigényt.",
+    "answer": true
+  },
+  {
+    "text": "Az egypartíciós rendszer több program egyidejű futtatását teszi lehetővé.",
+    "answer": false
+  },
+  {
+    "text": "A többpartíciós rendszer fix méretű partíciók használata esetén belső töredezettséget okozhat.",
+    "answer": true
+  },
+  {
+    "text": "A dinamikusan kiosztott partíciók nem okoznak külső töredezettséget.",
+    "answer": false
+  },
+  {
+    "text": "A Best Fit algoritmus a legkisebb, még elegendő méretű területet választja ki.",
+    "answer": true
+  },
+  {
+    "text": "A First Fit algoritmus a legelső megfelelő méretű területet választja ki.",
+    "answer": true
+  },
+  {
+    "text": "A Next Fit algoritmus a tár elejéről indítja a keresést minden alkalommal.",
+    "answer": false
+  },
+  {
+    "text": "A Worst Fit algoritmus a legnagyobb szabad területből foglal.",
+    "answer": true
+  },
+  {
+    "text": "A tárcsere technikát akkor használjuk, ha a teljes memória kihasználatlan.",
+    "answer": false
+  },
+  {
+    "text": "A lapszervezés fix méretű lapokkal dolgozik.",
+    "answer": true
+  },
+  {
+    "text": "A szegmensszervezés változó méretű szegmensekkel dolgozik.",
+    "answer": true
+  },
+  {
+    "text": "A kombinált szervezés a szegmens- és a lapszervezés együttes használata.",
+    "answer": true
+  },
+  {
+    "text": "A logikai címek 0-tól indulnak, de a fizikai címek minden folyamat esetén ugyanazok.",
+    "answer": false
+  },
+  {
+    "text": "A virtuális memória lehetővé teszi, hogy a fizikai memóriánál nagyobb memóriaterületet használjunk.",
+    "answer": true
+  },
+  {
+    "text": "A laphiba azt jelenti, hogy a keresett lap nincs az operatív memóriában.",
+    "answer": true
+  },
+  {
+    "text": "Az igény szerinti lapozás csak a szükséges lapokat tölti be a memóriába.",
+    "answer": true
+  },
+  {
+    "text": "Az előretekintő lapozás a szükségesnél több lapot is betölthet a memóriába.",
+    "answer": true
+  },
+  {
+    "text": "A FIFO lapcsere algoritmus mindig a legfrissebb lapot törli.",
+    "answer": false
+  },
+  {
+    "text": "Az LRU algoritmus a legrégebben nem használt lapot távolítja el.",
+    "answer": true
+  },
+  {
+    "text": "Az LFU algoritmus a legkevésbé gyakran használt lapot cseréli ki.",
+    "answer": true
+  },
+  {
+    "text": "Az NRU algoritmus két bitet használ a döntéshez.",
+    "answer": true
+  },
+  {
+    "text": "A globális memória-gazdálkodás egyenlően kezeli a kis és nagy folyamatokat.",
+    "answer": false
+  },
+  {
+    "text": "A lokális memória-gazdálkodás a laphibákat csak a folyamat saját lapjai között kezeli.",
+    "answer": true
+  },
+  {
+    "text": "A dinamikus lokális memória-gazdálkodás képes a lapok globális átcsoportosítására.",
+    "answer": true
+  },
+  {
+    "text": "A working set a folyamat futása során használt lapok aktuális halmaza.",
+    "answer": true
+  },
+  {
+    "text": "A laphiba gyakorisága nem alkalmas a memóriaigények mérésére.",
+    "answer": false
+  },
+  {
+    "text": "Minél több lap van kiosztva egy folyamathoz, annál kevesebb a laphiba.",
+    "answer": true
+  },
+  {
+    "text": "A lapcsere algoritmusok hatékonysága nem függ a hardver támogatottságától.",
+    "answer": false
+  },
+  {
+    "text": "A terheléselosztás optimalizálása segíti a rendszer teljesítményét.",
+    "answer": true
+  },
+  {
+    "text": "A laphiba kezelése megszakítással történik.",
+    "answer": true
+  }
+]
+[
+  {
+    "text": "A FAT egy láncolt lista szerkezetű fájlrendszer.",
+    "answer": true
+  },
+  {
+    "text": "A HPFS fájlrendszer B+FA struktúrát használ a töredezettség elkerülésére.",
+    "answer": true
+  },
+  {
+    "text": "A NTFS fájlrendszer a Linux rendszerek alapértelmezett fájlrendszere.",
+    "answer": false
+  },
+  {
+    "text": "Az UFS fájlrendszer tartalmaz egy úgynevezett 'magic number'-t.",
+    "answer": true
+  },
+  {
+    "text": "Az NFS a fájlok hálózaton történő megosztását teszi lehetővé.",
+    "answer": true
+  },
+  {
+    "text": "A VFS nem fizikai fájlrendszer, hanem egy interfész a kernel és a fizikai fájlrendszer között.",
+    "answer": true
+  },
+  {
+    "text": "A JFS nem támogatja a naplózást.",
+    "answer": false
+  },
+  {
+    "text": "Az EXT3 és az EXT4 fájlrendszer már tartalmaz naplózási képességeket.",
+    "answer": true
+  },
+  {
+    "text": "Az LTFS a mágnesszalagokra optimalizált fájlrendszer.",
+    "answer": true
+  },
+  {
+    "text": "A CDFS kizárólag HDD-kre alkalmazható fájlrendszer.",
+    "answer": false
+  },
+  {
+    "text": "A fájlokhoz rendelt információk között szerepelhet a hozzáférési jogosultság is.",
+    "answer": true
+  },
+  {
+    "text": "A fájlok eléréséhez a felhasználónak ismernie kell a fizikai tárolás pontos helyét.",
+    "answer": false
+  },
+  {
+    "text": "A fájlrendszer egy szoftveres réteg, amely biztosítja a fizikai tároló elérését.",
+    "answer": true
+  },
+  {
+    "text": "A fájlok kizárólag szöveg típusú tartalom tárolására alkalmasak.",
+    "answer": false
+  },
+  {
+    "text": "A könyvtárak és a kötetek a fájlrendszer logikai elemei.",
+    "answer": true
+  },
+  {
+    "text": "A fájlkezelő rendszer feladata a szabad helyek nyilvántartása.",
+    "answer": true
+  },
+  {
+    "text": "A szabad blokkok nyilvántartása történhet bittérképes ábrázolással.",
+    "answer": true
+  },
+  {
+    "text": "A láncolt lista módszernél minden blokk tartalmazza a következő blokk sorszámát.",
+    "answer": true
+  },
+  {
+    "text": "A szabad blokkok csoportjának láncolt listájában egy blokk több blokk címét is tárolhatja.",
+    "answer": true
+  },
+  {
+    "text": "A szabad blokkok egybefüggő területeinek leírása nem lehetséges.",
+    "answer": false
+  },
+  {
+    "text": "A folytonos terület foglalás esetén a külső tördelődés probléma lehet.",
+    "answer": true
+  },
+  {
+    "text": "A láncolt lista módszer előnye, hogy nincs külső tördelődés.",
+    "answer": true
+  },
+  {
+    "text": "A FAT tábla két példányban tárolódik a lemezen.",
+    "answer": true
+  },
+  {
+    "text": "A FAT tábla segítségével a blokkok közvetlenül elérhetők.",
+    "answer": false
+  },
+  {
+    "text": "Az indexelt tárolás minden fájl esetében egy teljes indexblokkot igényel.",
+    "answer": true
+  },
+  {
+    "text": "A kis méretű fájlokat általában folytonosan, a nagyokat indexelt módszerrel célszerű tárolni.",
+    "answer": true
+  },
+  {
+    "text": "A soros hozzáférés során az adatokat a bájtok sorrendjében lehet elérni.",
+    "answer": true
+  },
+  {
+    "text": "Az indexelt-szekvenciális hozzáférés az indexállomány segítségével kulcs alapján keres.",
+    "answer": true
+  },
+  {
+    "text": "A fájlok belső szerkezete az operációs rendszer szintjén általában nem ismert.",
+    "answer": true
+  },
+  {
+    "text": "A partícionált fájlok soros rész-állományokból állnak.",
+    "answer": true
+  },
+  {
+    "text": "A könyvtárakban tárolt információk között szerepelhet a hivatkozás számláló is.",
+    "answer": true
+  },
+  {
+    "text": "A könyvtárak törlése csak akkor lehetséges, ha üresek.",
+    "answer": true
+  },
+  {
+    "text": "A fa struktúra jellemzője, hogy több elérési út is lehet egy állományhoz.",
+    "answer": false
+  },
+  {
+    "text": "A körmentes irányított gráf lehetővé teszi, hogy egy állomány több útvonalon elérhető legyen.",
+    "answer": true
+  },
+  {
+    "text": "A könyvtárak keresése történhet rendezetlen vagy rendezett módszerrel is.",
+    "answer": true
+  },
+  {
+    "text": "A könyvtárak keresésénél a felező eljárás a gyorsabb megoldás.",
+    "answer": true
+  },
+  {
+    "text": "Az állománykezelés során a törlés mindig fizikai törlést jelent.",
+    "answer": false
+  },
+  {
+    "text": "A könyvtárak hierarchikus szerkezete megkönnyíti az állományok rendszerezését.",
+    "answer": true
+  },
+  {
+    "text": "A könyvtárszerkezetek közül a fa struktúra a legelterjedtebb.",
+    "answer": true
+  }
+]
+[
+  {
+    "text": "A perifériák lehetnek ember-gép, gép-gép, vagy adattároló kapcsolattartók.",
+    "answer": true
+  },
+  {
+    "text": "A GDI nyomtatók közbeiktatott lapleíró nyelv nélkül is tudnak nyomtatni.",
+    "answer": true
+  },
+  {
+    "text": "Az IRQ és a DMA a perifériák szinkronizációjának eszközei.",
+    "answer": true
+  },
+  {
+    "text": "A logikai periféria kezelés célja a hardverismeret nélküli perifériahasználat.",
+    "answer": true
+  },
+  {
+    "text": "A Device Driver a felhasználói program része.",
+    "answer": false
+  },
+  {
+    "text": "A multiprogramozás nem használható I/O műveletek közben.",
+    "answer": false
+  },
+  {
+    "text": "Az IOCB tartalmazza az I/O műveletek paramétereit.",
+    "answer": true
+  },
+  {
+    "text": "A Start művelet elindítja az I/O műveletet és várakozik a befejezésére.",
+    "answer": false
+  },
+  {
+    "text": "A Stop_Device utasítás a hibás I/O műveletek leállítására szolgál.",
+    "answer": true
+  },
+  {
+    "text": "Az adatmozgatás során a forrás és cél mindig logikai címek.",
+    "answer": false
+  },
+  {
+    "text": "Az elosztott rendszerek lehetnek lazán vagy szorosan csatoltak.",
+    "answer": true
+  },
+  {
+    "text": "A lazán csatolt rendszerek közös memóriát használnak.",
+    "answer": false
+  },
+  {
+    "text": "Az elosztott rendszer lényege, hogy a felhasználó egy egységes erőforrásként érzékeli.",
+    "answer": true
+  },
+  {
+    "text": "Az elosztott rendszerek mindig biztosítják a hibatűrést.",
+    "answer": false
+  },
+  {
+    "text": "Az erőforráskezelő programok kezelik az elosztott erőforrások megosztását.",
+    "answer": true
+  },
+  {
+    "text": "Az erőforrás megosztásban minden elem egyenlő hozzáférést biztosít.",
+    "answer": false
+  },
+  {
+    "text": "A kliens-szerver modell az elosztott rendszerekben gyakori architektúra.",
+    "answer": true
+  },
+  {
+    "text": "A nyílt rendszerek rugalmasan bővíthetők hardveresen és szoftveresen.",
+    "answer": true
+  },
+  {
+    "text": "A UNIX nem támogatta a nyílt rendszerarchitektúrát.",
+    "answer": false
+  },
+  {
+    "text": "A konkurens működés alapja a párhuzamos CPU erőforrások használata.",
+    "answer": true
+  },
+  {
+    "text": "A konkurens működés kizárja a folyamatok közötti szinkronizációt.",
+    "answer": false
+  },
+  {
+    "text": "A méretezhetőség azt jelenti, hogy a rendszer strukturális változtatás nélkül bővíthető.",
+    "answer": true
+  },
+  {
+    "text": "A hibatűrés megvalósításához nem szükséges redundancia.",
+    "answer": false
+  },
+  {
+    "text": "A szavazó rendszer a hibatűrés egyik speciális esete.",
+    "answer": true
+  },
+  {
+    "text": "Az átlátszóság biztosítja, hogy a felhasználó ne érzékelje a rendszer elosztott mivoltát.",
+    "answer": true
+  },
+  {
+    "text": "A hozzáférés átlátszóság és a hely átlátszóság a hálózati átlátszóság alapját képezik.",
+    "answer": true
+  },
+  {
+    "text": "A teljesítmény átlátszóság azt jelenti, hogy a rendszer automatikusan reagál a terhelés változásaira.",
+    "answer": true
+  },
+  {
+    "text": "A skálázási átlátszóság a rendszer bővíthetőségének rejtettségét biztosítja.",
+    "answer": true
+  },
+  {
+    "text": "A hálózati átlátszóság megléte nem befolyásolja a rendszer felhasználhatóságát.",
+    "answer": false
+  },
+  {
+    "text": "A hálózati operációs rendszerek nem biztosítanak átlátszóságot.",
+    "answer": true
+  },
+  {
+    "text": "Az elosztott operációs rendszerek nem támogatják a számításvándorlást.",
+    "answer": false
+  },
+  {
+    "text": "Az elosztott fájlrendszerek a fájlok elérési átlátszóságát biztosítják.",
+    "answer": true
+  },
+  {
+    "text": "A nem uniform elnevezési rendszer azonos fájlokat eltérő neveken tesz elérhetővé különböző gépeken.",
+    "answer": true
+  },
+  {
+    "text": "A védelem az erőforrásokhoz való szabályozott hozzáférés biztosítása.",
+    "answer": true
+  },
+  {
+    "text": "A biztonság fogalma nem kapcsolódik az adatok sérthetetlenségéhez.",
+    "answer": false
+  },
+  {
+    "text": "A védelmi tartomány váltása definiálja, mely tartományból melyikbe lehet átlépni.",
+    "answer": true
+  },
+  {
+    "text": "Az elérési mátrix cellái a jogosultságokat tartalmazzák.",
+    "answer": true
+  },
+  {
+    "text": "A zár-kulcs módszer a jogosultságok kezelésének egyik megoldása.",
+    "answer": true
+  },
+  {
+    "text": "A vírusok képesek maguktól terjedni a felhasználó közreműködése nélkül.",
+    "answer": false
+  },
+  {
+    "text": "A férgek képesek önállóan, felhasználói beavatkozás nélkül terjedni.",
+    "answer": true
+  },
+  {
+    "text": "A trójai programok jellemzően látható, hasznos programnak álcázzák magukat.",
+    "answer": true
+  },
+  {
+    "text": "A zsarolóvírus egyfajta adathalász támadás.",
+    "answer": false
+  },
+  {
+    "text": "A címhamisítás során a feladó látszólag megbízható forrásból származik.",
+    "answer": true
+  },
+  {
+    "text": "A kattintásvadász oldalak pszichológiai manipulációs módszert használnak.",
+    "answer": true
+  }
+]
+[
+  {
+    "text": "A Windows NT operációs rendszer 32-bites verziója 1993-ban jelent meg.",
+    "answer": true
+  },
+  {
+    "text": "A Windows 3.1 volt az első 32-bites Windows verzió.",
+    "answer": false
+  },
+  {
+    "text": "Az NT 4.0 verzióban a UNICODE használata kötelezővé vált.",
+    "answer": true
+  },
+  {
+    "text": "A Windows NT fejlesztése során a mikrokernel architektúra mellett döntöttek.",
+    "answer": false
+  },
+  {
+    "text": "A Windows NT hibrid kernel architektúrát alkalmaz.",
+    "answer": true
+  },
+  {
+    "text": "A Windows NT rendszerek objektumorientált szemléletben készültek.",
+    "answer": true
+  },
+  {
+    "text": "A Windows NT rendszerek teljes mértékben támogatják a polimorfizmust és az öröklődést.",
+    "answer": false
+  },
+  {
+    "text": "A HAL réteg CPU-tól függő funkciókat tartalmaz.",
+    "answer": true
+  },
+  {
+    "text": "A HAL réteg nem része az operációs rendszernek.",
+    "answer": true
+  },
+  {
+    "text": "A kernel a CPU architektúrájától függ, de nem a konkrét CPU típustól.",
+    "answer": true
+  },
+  {
+    "text": "A kernel módú szálkezelés a Windows NT egyik alapvető funkciója.",
+    "answer": true
+  },
+  {
+    "text": "A device driverek kizárólag kernel módban futnak.",
+    "answer": true
+  },
+  {
+    "text": "A szűrő típusú driverek például a RAID és hibatűrő funkciókat valósítják meg.",
+    "answer": true
+  },
+  {
+    "text": "A fájlrendszer driverek a kernel közvetlen részei.",
+    "answer": false
+  },
+  {
+    "text": "Az executive réteg feladatai közé tartozik a memóriakezelés és a biztonsági alrendszer működtetése.",
+    "answer": true
+  },
+  {
+    "text": "Az LPC az NT rendszerek folyamatok közötti kommunikációját valósítja meg.",
+    "answer": true
+  },
+  {
+    "text": "Az NTDLL.DLL közvetlenül kapcsolódik a hardverhez.",
+    "answer": false
+  },
+  {
+    "text": "Az NTDLL.DLL teszi lehetővé a kernel mód és a user mód közötti kommunikációt.",
+    "answer": true
+  },
+  {
+    "text": "Az NTDLL.DLL tartalmaz dokumentált és nem dokumentált függvényeket is.",
+    "answer": true
+  },
+  {
+    "text": "A rendszerfolyamatok mind user módban futnak.",
+    "answer": true
+  },
+  {
+    "text": "Az SMSS felelős a rendszerfolyamatok és szolgáltatások indításáért.",
+    "answer": true
+  },
+  {
+    "text": "A LOGON folyamat a felhasználók azonosítását és beléptetését végzi.",
+    "answer": true
+  },
+  {
+    "text": "A ServiceController leállítható a rendszer működése közben anélkül, hogy az hatással lenne a működésre.",
+    "answer": false
+  },
+  {
+    "text": "A szolgáltatások user módban futnak, de nem feltétlenül szükségesek a rendszer alapvető működéséhez.",
+    "answer": true
+  },
+  {
+    "text": "A Service Manager lehetővé teszi a szolgáltatások indítását és leállítását.",
+    "answer": true
+  },
+  {
+    "text": "A Windows NT alrendszereiből mára csak a Win32 maradt meg.",
+    "answer": true
+  },
+  {
+    "text": "A Win32 alrendszer nem képes a grafikus megjelenítés kezelésére.",
+    "answer": false
+  },
+  {
+    "text": "A Win32 API hívásai lehetnek közvetlenek, az alrendszer DLL-jein keresztül, vagy kernel módba átlépő hívások.",
+    "answer": true
+  },
+  {
+    "text": "A 64-bites Windows rendszerek nem támogatják a 16-bites és DOS alkalmazásokat natívan.",
+    "answer": true
+  },
+  {
+    "text": "A WoW64 alrendszer a 64-bites rendszeren a 32-bites programok futtatására szolgál.",
+    "answer": true
+  },
+  {
+    "text": "A WoW64 a 64-bites Windows rendszerekben nem része az alapértelmezett telepítésnek.",
+    "answer": false
+  },
+  {
+    "text": "A Windows NT alapú rendszerek architektúrája réteges felépítésű.",
+    "answer": true
+  },
+  {
+    "text": "A Plug-And-Play kezelő a Windows 2000-től kezdve része az executive rétegnek.",
+    "answer": true
+  },
+  {
+    "text": "A Windows NT rendszerek szigorúan szétválasztják a kernel mód és user mód futtatásokat.",
+    "answer": true
+  },
+  {
+    "text": "A Windows NT rendszer hardverfüggetlen, mivel a kernel és a HAL réteg minden CPU architektúrán azonos.",
+    "answer": false
+  }
+]
+[
+  {
+    "text": "A Windows NT operációs rendszerek megszakítás- és kivételkezelést is biztosítanak.",
+    "answer": true
+  },
+  {
+    "text": "A megszakításokat mindig szoftver alapú események váltják ki.",
+    "answer": false
+  },
+  {
+    "text": "A kivételkezelő modul feladata a hibák beazonosítása és a futás folytatása.",
+    "answer": true
+  },
+  {
+    "text": "A Windows NT rendszerben a trap a szál futásának megszakítását jelenti.",
+    "answer": true
+  },
+  {
+    "text": "A trapkezelő szoftveres úton képes kezelni a problémákat.",
+    "answer": true
+  },
+  {
+    "text": "Az objektumkezelő biztosítja az erőforrások elérését és védelmét.",
+    "answer": true
+  },
+  {
+    "text": "Az executive objektumok kizárólag kernel objektumokból épülnek fel.",
+    "answer": false
+  },
+  {
+    "text": "A handle a folyamatok számára biztosít hozzáférést az objektumokhoz.",
+    "answer": true
+  },
+  {
+    "text": "A kölcsönös kizárás biztosítása nem szükséges több magos rendszerek esetén.",
+    "answer": false
+  },
+  {
+    "text": "A Spin-Lock használata kizárja a megszakításokat és kivételeket a kritikus szakaszokban.",
+    "answer": true
+  },
+  {
+    "text": "A Dispatcher Object lehetőséget ad a várakoztatott folyamatok kezelésére.",
+    "answer": true
+  },
+  {
+    "text": "A WaitForSingleObject függvény a szinkronizációs objektumokhoz kapcsolódik.",
+    "answer": true
+  },
+  {
+    "text": "Az LPC a felhasználói alkalmazások közötti kommunikációra szolgál.",
+    "answer": false
+  },
+  {
+    "text": "Az LPC kapcsolat létrejöhet kernel és user módú komponensek között.",
+    "answer": true
+  },
+  {
+    "text": "Az LPC rövid üzenetek esetén 256 bájtnál nagyobb puffert igényel.",
+    "answer": false
+  },
+  {
+    "text": "A Windows NT rendszerekben a szálak a folyamatokon belüli entitások.",
+    "answer": true
+  },
+  {
+    "text": "Minden szál rendelkezik saját kernel és user veremtárral.",
+    "answer": true
+  },
+  {
+    "text": "A Thread ID és a Process ID külön névtérből kerül kiosztásra.",
+    "answer": false
+  },
+  {
+    "text": "A PEB (Process Environment Block) a kernel címterében található.",
+    "answer": false
+  },
+  {
+    "text": "A Win32 CreateProcess függvény több rendszerkomponenst von be a folyamat létrehozásába.",
+    "answer": true
+  },
+  {
+    "text": "A szálak alapértelmezett állapota a felfüggesztett állapot.",
+    "answer": true
+  },
+  {
+    "text": "A KeStartThread hívása után a szál készen áll a futtatásra.",
+    "answer": true
+  },
+  {
+    "text": "Az ütemezés Windows NT alatt nem preemptív.",
+    "answer": false
+  },
+  {
+    "text": "A szálak prioritásai alapvetően a szálhoz rendelt prioritási szintekből származnak.",
+    "answer": true
+  },
+  {
+    "text": "A processzor affinitás határozza meg, melyik magon futhat egy szál.",
+    "answer": true
+  },
+  {
+    "text": "A kvantum időszelet határozza meg, meddig futhat megszakítás nélkül egy szál.",
+    "answer": true
+  },
+  {
+    "text": "A kvantum értéke a Windows NT Workstation esetén 36.",
+    "answer": false
+  },
+  {
+    "text": "A prioritási szintek 0 és 31 között mozognak a Windows NT rendszerben.",
+    "answer": true
+  },
+  {
+    "text": "A real-time prioritási szintek 1 és 15 közé esnek.",
+    "answer": false
+  },
+  {
+    "text": "Az Idle szinthez 0 prioritásérték tartozik.",
+    "answer": false
+  },
+  {
+    "text": "A szál állapota lehet Ready, Running, vagy Terminated.",
+    "answer": true
+  },
+  {
+    "text": "A Standby állapotban lévő szál már a futtatásra kiválasztott szál.",
+    "answer": true
+  },
+  {
+    "text": "A Transition állapotba kerülés oka a kernel veremtár kilapozása.",
+    "answer": true
+  },
+  {
+    "text": "A szálak kvantum értéke órajelmegszakításonként csökken.",
+    "answer": true
+  },
+  {
+    "text": "A rendszer szigorúan megkülönbözteti a kernel és user módú futtatást.",
+    "answer": true
+  },
+  {
+    "text": "A Windows NT operációs rendszer ütemezője egy dedikált modulban helyezkedik el.",
+    "answer": false
+  },
+  {
+    "text": "A Windows NT alapú rendszerek ütemezése szál alapú, prioritásvezérelt és preemptív.",
+    "answer": true
+  },
+  {
+    "text": "A szálak állapota között nincs közvetlen átmenet a Waiting és a Running állapot között.",
+    "answer": false
+  },
+  {
+    "text": "A Windows NT operációs rendszerek esetén a szálak prioritásai sosem változhatnak dinamikusan.",
+    "answer": false
+  }
+]
+[
+  {
+    "text": "A Windows 10 feladatkezelője a memóriamegoszlás grafikus ábrázolására is képes, ahol az egérrel a kurzort mozgatva jelenik meg a részletes információ.",
+    "answer": true
+  },
+  {
+    "text": "A 'Készenléti' memória mindig teljes mértékben rendelkezésre álló szabad memória.",
+    "answer": false
+  },
+  {
+    "text": "A Windows NT memóriakezelője a logikai címeket a fizikai címekhez rendeli hozzá a címtranszformáció segítségével.",
+    "answer": true
+  },
+  {
+    "text": "A PAE lehetővé teszi, hogy a 32-bites rendszerek egyidejűleg több folyamat számára is 4GB-nál nagyobb címtartományt biztosítsanak.",
+    "answer": false
+  },
+  {
+    "text": "Az IA-64 architektúra kizárólag az Itanium sorozatú processzorokban került megvalósításra.",
+    "answer": true
+  },
+  {
+    "text": "A 64-bites rendszerekben minden egyes folyamat akár 8TB memóriaterületet is igénybe vehet.",
+    "answer": false
+  },
+  {
+    "text": "A memóriaigényes folyamatok memóriafoglalása két lépésben történik: először Reserve, majd Commit.",
+    "answer": true
+  },
+  {
+    "text": "A Reserve lépés során a rendszer azonnal lefoglalja a fizikai memória területet a folyamat számára.",
+    "answer": false
+  },
+  {
+    "text": "A Windows NT rendszerek memóriakezelésében a Clustering a lapozási műveletek hatékonyságát javítja a lokalitás elv alapján.",
+    "answer": true
+  },
+  {
+    "text": "A Prefetcher kizárólag a rendszerindításkor működik, alkalmazások indításakor nem.",
+    "answer": false
+  },
+  {
+    "text": "A Superfetch szolgáltatás a memórialapokat életciklus szerint priorizálja, és állít össze egy stand-by listát.",
+    "answer": true
+  },
+  {
+    "text": "A ReadyBoost a RAM méretét növeli meg a flash tárhely használatával.",
+    "answer": false
+  },
+  {
+    "text": "A Memory Mapped Files lehetővé teszi a fájlok megosztott, memóriaként történő elérését.",
+    "answer": true
+  },
+  {
+    "text": "A Copy-on-Write mechanizmus lusta kiértékelést alkalmaz, azaz a másolatkészítés csak akkor történik meg, amikor tényleges írási művelet történik.",
+    "answer": true
+  },
+  {
+    "text": "A 32-bites Windows NT rendszerek memóriatérképe mindig 2GB a rendszer számára és 2GB a felhasználói folyamatok számára, függetlenül a /3GB kapcsolótól.",
+    "answer": false
+  },
+  {
+    "text": "A Windows NT memóriavédelem garantálja, hogy egy folyamat nem írhat egy másik folyamat címterületére.",
+    "answer": true
+  },
+  {
+    "text": "A szekció objektumokhoz hozzárendelt fájlok és memórialapok osztott elérésűek lehetnek több folyamat számára is.",
+    "answer": true
+  },
+  {
+    "text": "A nem lapozott memória tárak tartalma szükség esetén áthelyezhető a háttértárra.",
+    "answer": false
+  },
+  {
+    "text": "A kernel módú komponensek memóriafoglalása kizárólag nem lapozott memória tárból történik.",
+    "answer": false
+  },
+  {
+    "text": "A Copy-on-Write mechanizmus optimalizálja a memóriahasználatot, mivel elkerüli a felesleges másolatkészítést.",
+    "answer": true
+  },
+  {
+    "text": "A Windows NT rendszerek memóriakezelése nem támogatja a megosztott memória létrehozását.",
+    "answer": false
+  },
+  {
+    "text": "A szálak user módú veremtára inicializálásakor a Commit művelet csak néhány lapnyi memóriát foglal le, míg a Reserve a teljes címtartományt lefoglalja.",
+    "answer": true
+  },
+  {
+    "text": "A lusta kiértékelés (Lazy Evaluation) elve alapján a rendszer erőforrás-igényes műveletek végrehajtását addig késlelteti, amíg az ténylegesen szükségessé nem válik.",
+    "answer": true
+  },
+  {
+    "text": "A Windows NT memóriakezelése nem engedélyezi a memórialapok aszinkron módú betöltését.",
+    "answer": false
+  },
+  {
+    "text": "A Windows NT rendszerekben a memória foglalása fizikai lapok szintjén történik, nem bájtszintű címzéssel.",
+    "answer": true
+  }
+]
+[
+  {
+    "text": "Az NTFS fájlrendszer maximális fájlmérete 16TB, míg a maximális partíciómérete 256TB lehet.",
+    "answer": true
+  },
+  {
+    "text": "A FAT32 fájlrendszer támogatja a hosszú fájlneveket, maximum 255 karakter hosszúságig.",
+    "answer": true
+  },
+  {
+    "text": "Az NTFS 'Convert' parancs segítségével közvetlenül lehet a FAT32 fájlrendszert NTFS-re konvertálni adatvesztés nélkül.",
+    "answer": true
+  },
+  {
+    "text": "Az NTFS log fájlja egy körkörös szervezésű tömb, amely redundáns példányokat tartalmaz a biztonság érdekében.",
+    "answer": true
+  },
+  {
+    "text": "Az NTFS fájlrendszer képes automatikusan javítani a hibás szektorok tartalmát, ha azok olvashatók maradnak.",
+    "answer": true
+  },
+  {
+    "text": "Az alternatív adatfolyamok (ADS) tartalma látható a fájlméret alapján a felhasználói nézetben.",
+    "answer": false
+  },
+  {
+    "text": "Az alternatív adatfolyamok (ADS) elvesznek, ha az adott fájlt egy FAT32 típusú fájlrendszerre másoljuk.",
+    "answer": true
+  },
+  {
+    "text": "Az NTFS titkosítási funkciója, az EFS, már a Windows NT 4.0 verzióban is elérhető volt.",
+    "answer": false
+  },
+  {
+    "text": "A NTFS tömörítési funkciója a ZIP formátumot használó LZ77 algoritmust alkalmazza.",
+    "answer": true
+  },
+  {
+    "text": "A kötet formázása során a cluster méretét a felhasználó szabadon választhatja meg bármilyen értékre.",
+    "answer": false
+  },
+  {
+    "text": "A Logical Cluster Number (LCN) a kötet fizikai címtartományának sorszámozott blokkjait jelöli.",
+    "answer": true
+  },
+  {
+    "text": "A Virtual Cluster Number (VCN) a fájl logikai tárolóblokkjait jelöli, amelyek nem feltétlenül folytonosak a fizikai tárolón.",
+    "answer": true
+  },
+  {
+    "text": "A fájlok és könyvtárak az NTFS-ben egyedi 64-bites referenciaszámmal azonosíthatók, amely tartalmazza a MFT rekord sorszámát is.",
+    "answer": true
+  },
+  {
+    "text": "Az NTFS Metaadatok (Metadata) nem tartalmazzák a rendszerfájlok adatait.",
+    "answer": false
+  },
+  {
+    "text": "A Master File Table (MFT) a rendszer összes fájlját és azok tulajdonságait tartalmazza, kivéve a felhasználó által létrehozott fájlokat.",
+    "answer": false
+  },
+  {
+    "text": "A Master File Table első 16 rekordja kizárólag rendszerfájlokat tartalmaz, amelyek a felhasználó számára rejtettek.",
+    "answer": true
+  },
+  {
+    "text": "A nem rezidens attribútumok mindig a Master File Table-en kívül tárolódnak, különálló cluster blokkokban.",
+    "answer": true
+  },
+  {
+    "text": "A nem rezidens attribútumok tárolásakor a VCN és LCN hozzárendelés a fájlok töredezettségének kezelésére szolgál.",
+    "answer": true
+  },
+  {
+    "text": "A rezidens attribútumok soha nem tartalmazhatnak tömörített vagy titkosított adatokat.",
+    "answer": true
+  },
+  {
+    "text": "A fájlok attribútumai közé tartozhat a létrehozási idő, a módosítási idő, az írásvédettség és a tömörítettség is.",
+    "answer": true
+  }
+]
+
 
 
 
