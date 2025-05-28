@@ -13,6 +13,7 @@
     <button id="false-btn">Hamis</button>
     <div id="feedback"></div>
     <button id="next-btn">Következő</button>
+    <button id="evaluate-btn" style="display: none;">Értékelés</button>
   </div>
 
   <script>
@@ -20,7 +21,6 @@
     let selectedQuestions = [];
     let currentIndex = 0;
     let score = 0;
-    let lastSelected = null;
 
     fetch('questions.json')
       .then(response => response.json())
@@ -31,7 +31,7 @@
       })
       .catch(error => {
         console.error('Hiba a kérdések betöltésekor:', error);
-        document.getElementById('text').textContent = 'Hiba a kérdések betöltésekor.';
+        document.getElementById('question').textContent = 'Hiba a kérdések betöltésekor.';
       });
 
     function shuffleArray(array) {
@@ -48,41 +48,58 @@
         document.getElementById("question").textContent = `${currentIndex + 1}. ${selectedQuestions[currentIndex].text}`;
         document.getElementById("feedback").textContent = "";
         clearSelection();
+        // Gombok kezelése
+        document.getElementById("true-btn").style.display = "inline-block";
+        document.getElementById("false-btn").style.display = "inline-block";
+        document.getElementById("next-btn").style.display = "inline-block";
+        document.getElementById("evaluate-btn").style.display = "none";
       } else {
+        // Végeredmény megjelenítése
         let resultText = `${selectedQuestions.length}/${score}. `;
         resultText += (score > 16) ? "Sikerült!" : "Nem sikerült.";
         document.getElementById("question").textContent = resultText;
+
+        // Végén: gombok eltüntetése
         document.getElementById("true-btn").style.display = "none";
         document.getElementById("false-btn").style.display = "none";
         document.getElementById("next-btn").style.display = "none";
+        document.getElementById("evaluate-btn").style.display = "none";
+        document.getElementById("feedback").textContent = ""; // Ne írja ki, hogy helyes/helytelen
       }
     }
 
     document.getElementById("true-btn").onclick = () => selectAnswer(true, "true-btn");
     document.getElementById("false-btn").onclick = () => selectAnswer(false, "false-btn");
+
     document.getElementById("next-btn").onclick = () => {
       currentIndex++;
-      showQuestion();
+      if (currentIndex === selectedQuestions.length) {
+        // 24. kérdés után: Értékelés gombot mutatunk
+        document.getElementById("true-btn").style.display = "none";
+        document.getElementById("false-btn").style.display = "none";
+        document.getElementById("next-btn").style.display = "none";
+        document.getElementById("evaluate-btn").style.display = "inline-block";
+      } else {
+        showQuestion();
+      }
     };
-    
-    function selectAnswer(userAnswer, btnId) {
-    clearSelection();
-    document.getElementById(btnId).classList.add("selected");
-    lastSelected = document.getElementById(btnId);
-  
-    const correct = selectedQuestions[currentIndex].answer === userAnswer;
-    if (correct) {
-      score++;
-    }
-  
-    // Csak akkor írjuk ki, ha nem az utolsó kérdés
-    if (currentIndex < selectedQuestions.length - 1) {
-      document.getElementById("feedback").textContent = correct ? "Helyes!" : "Helytelen!";
-    } else {
-      document.getElementById("feedback").textContent = "";
-    }
-  }
 
+    document.getElementById("evaluate-btn").onclick = () => {
+      showQuestion(); // Végeredményt mutat, nem ír ki "helyes/helytelen" szöveget
+    };
+
+    function selectAnswer(userAnswer, btnId) {
+      clearSelection();
+      document.getElementById(btnId).classList.add("selected");
+
+      const correct = selectedQuestions[currentIndex].answer === userAnswer;
+      if (correct) {
+        score++;
+      }
+
+      // Még a 24. kérdésnél is írja ki a Helyes/Helytelen szöveget
+      document.getElementById("feedback").textContent = correct ? "Helyes!" : "Helytelen!";
+    }
 
     function clearSelection() {
       document.getElementById("true-btn").classList.remove("selected");
