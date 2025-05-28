@@ -102,9 +102,7 @@
   {
     "text": "A linux különböző verzióira a monolitikus vagy a hibrid kernel jellemző",
     "answer": true
-  }
-]
-[
+  },
   {
     "text": "A deklaratív programozás két fő iránya a logikai és a funkcionális programozás",
     "answer": true
@@ -204,9 +202,7 @@
   {
     "text": "A 'Spooling' technológia háttértárat igényel",
     "answer": true
-  }
-]
-[
+  },
   {
     "text": "A HPFS jellemzője a magic number",
     "answer": false
@@ -322,9 +318,7 @@
   {
     "text": "A Windows kernel user módban is preemptív ütemezést használ",
     "answer": true
-  }
-]
-[
+  },
   {
     "text": "A *dll fájlok a programok igényei szerint töltődnek be a memóriába",
     "answer": true
@@ -440,9 +434,7 @@
   {
     "text": "Egy HDD jellemzően rendelkezik BIOS-sal",
     "answer": false
-  }
-]
-[
+  },
   {
     "text": "Az Intel i3,i5, i7 processzor családok 32 bites szervezésűek",
     "answer": false
@@ -562,9 +554,7 @@
   {
     "text": "A Round-Robin algoritmus jellemzője a konvoj hatás",
     "answer": false
-  }
-]
-[
+  },
   {
     "text": "A SJF algoritmus fő szempontja a hosszú löketidő",
     "answer": false
@@ -620,9 +610,7 @@
   {
     "text": "A kliens-szerver modellt a vevőoldali port jellemzi",
     "answer": true
-  }
-]
-[
+  },
   {
     "text": "Az operációs rendszer a hardver és a felhasználó közötti közvetítő.",
     "answer": true
@@ -742,9 +730,7 @@
   {
     "text": "A kernel részei közvetlenül a felhasználó által futtatott programokból állnak.",
     "answer": false
-  }
-]
-[
+  },
   {
     "text": "A multiprogramozott rendszerek előtt a számítógépek kizárólag szekvenciálisan futtatták a programokat.",
     "answer": true
@@ -864,9 +850,7 @@
   {
     "text": "A processzek között csak a futási sorrend alapján történik váltás.",
     "answer": false
-  }
-]
-[
+  },
   {
     "text": "Az ütemezés az ütemezendő események sorrendjének meghatározását jelenti.",
     "answer": true
@@ -986,9 +970,7 @@
   {
     "text": "A legrövidebb löketidejű algoritmus mindig preemptív.",
     "answer": false
-  }
-]
-[
+  },
   {
     "text": "A Windows NT alapú rendszerek szálütemezést használnak.",
     "answer": true
@@ -1128,9 +1110,7 @@
   {
     "text": "A csoportkommunikáció során csak egy folyamat kapja meg az üzenetet.",
     "answer": false
-  }
-]
-[
+  },
   {
     "text": "A szinkronizáció célja a folyamatok közötti összehangolt együttműködés biztosítása.",
     "answer": true
@@ -1230,9 +1210,7 @@
   {
     "text": "A monitor objektum használata magas szintű, objektumorientált nyelvekben különösen egyszerű.",
     "answer": true
-  }
-]
-[
+  },
   {
     "text": "Az éheztetés folyamat szintű probléma.",
     "answer": true
@@ -1352,9 +1330,7 @@
   {
     "text": "A bankár algoritmus a folyamatok prioritását nem veszi figyelembe.",
     "answer": true
-  }
-]
-[
+  },
   {
     "text": "A tárolóeszközök csoportosításának egyik fő szempontja, hogy kikapcsolás után megőrzi-e a tartalmát.",
     "answer": true
@@ -1510,9 +1486,7 @@
   {
     "text": "A laphiba kezelése megszakítással történik.",
     "answer": true
-  }
-]
-[
+  },
   {
     "text": "A FAT egy láncolt lista szerkezetű fájlrendszer.",
     "answer": true
@@ -1668,9 +1642,7 @@
   {
     "text": "A könyvtárszerkezetek közül a fa struktúra a legelterjedtebb.",
     "answer": true
-  }
-]
-[
+  },
   {
     "text": "A perifériák lehetnek ember-gép, gép-gép, vagy adattároló kapcsolattartók.",
     "answer": true
@@ -1846,9 +1818,7 @@
   {
     "text": "A kattintásvadász oldalak pszichológiai manipulációs módszert használnak.",
     "answer": true
-  }
-]
-[
+  },
   {
     "text": "A Windows NT operációs rendszer 32-bites verziója 1993-ban jelent meg.",
     "answer": true
@@ -1988,9 +1958,7 @@
   {
     "text": "A Windows NT rendszer hardverfüggetlen, mivel a kernel és a HAL réteg minden CPU architektúrán azonos.",
     "answer": false
-  }
-]
-[
+  },
   {
     "text": "A Windows NT operációs rendszerek megszakítás- és kivételkezelést is biztosítanak.",
     "answer": true
@@ -2146,9 +2114,7 @@
   {
     "text": "A Windows NT operációs rendszerek esetén a szálak prioritásai sosem változhatnak dinamikusan.",
     "answer": false
-  }
-]
-[
+  },
   {
     "text": "A Windows 10 feladatkezelője a memóriamegoszlás grafikus ábrázolására is képes, ahol az egérrel a kurzort mozgatva jelenik meg a részletes információ.",
     "answer": true
@@ -2248,9 +2214,7 @@
   {
     "text": "A Windows NT rendszerekben a memória foglalása fizikai lapok szintjén történik, nem bájtszintű címzéssel.",
     "answer": true
-  }
-]
-[
+  },
   {
     "text": "Az NTFS fájlrendszer maximális fájlmérete 16TB, míg a maximális partíciómérete 256TB lehet.",
     "answer": true
@@ -2329,6 +2293,202 @@
   },
   {
     "text": "A fájlok attribútumai közé tartozhat a létrehozási idő, a módosítási idő, az írásvédettség és a tömörítettség is.",
+    "answer": true
+  },
+  {
+    "text": "Az operációs rendszer legfontosabb funkciója a felhasználó programjainak közvetlen hardver-hozzáférés biztosítása.",
+    "answer": false
+  },
+  {
+    "text": "A kernel üzemmód lehetővé teszi, hogy a program közvetlenül manipulálja a hardvert.",
+    "answer": true
+  },
+  {
+    "text": "A processzek létrehozásakor a folyamatok automatikusan öröklik a szülőfolyamat összes erőforrását.",
+    "answer": false
+  },
+  {
+    "text": "A Spin-lock kizárja a megszakításokat a kritikus szakaszokban.",
+    "answer": true
+  },
+  {
+    "text": "A rendszerhívások kizárólag kernel módból érhetők el.",
+    "answer": false
+  },
+  {
+    "text": "Az FCFS algoritmus nem preemptív, és nem garantálja a rövid válaszidőt.",
+    "answer": true
+  },
+  {
+    "text": "A futó folyamatok listáját a Dispatcher kezeli, nem az ütemező.",
+    "answer": false
+  },
+  {
+    "text": "A lapozási mechanizmus lényege, hogy minden folyamat számára fix méretű lapokat foglaljon le előre.",
+    "answer": false
+  },
+  {
+    "text": "A monitor programszerkezet legalább egy feltételváltozót igényel.",
+    "answer": true
+  },
+  {
+    "text": "A folyamatok közötti kommunikációban a közvetlen megnevezés mindig a partner folyamat azonosítóját igényli.",
+    "answer": true
+  },
+  {
+    "text": "A konkurens működés alapvetően feltételezi a megosztott erőforrások használatát.",
+    "answer": true
+  },
+  {
+    "text": "Az SMP rendszerek csak preemptív ütemezéssel működhetnek.",
+    "answer": false
+  },
+  {
+    "text": "A MAR regiszter a memória tartalmát tárolja olvasás közben.",
+    "answer": false
+  },
+  {
+    "text": "Az UFS fájlrendszer nem támogat naplózást.",
+    "answer": false
+  },
+  {
+    "text": "A Plug and Play technológia lehetővé teszi, hogy egy eszköz beállításait a BIOS állítsa be automatikusan.",
+    "answer": false
+  },
+  {
+    "text": "A kernel módú szálak általában nem használnak veremtárat.",
+    "answer": false
+  },
+  {
+    "text": "A Round-Robin algoritmus hatékonyságát nagymértékben befolyásolja az időszelet mérete.",
+    "answer": true
+  },
+  {
+    "text": "A középtávú ütemező kizárólag a CPU erőforrások kiosztásáért felelős.",
+    "answer": false
+  },
+  {
+    "text": "A paging rendszer megakadályozza a teljes fizikai memória felhasználását.",
+    "answer": false
+  },
+  {
+    "text": "A swap terület a folyamatok által ideiglenesen nem használt memórialapokat tárolja.",
+    "answer": true
+  },
+  {
+    "text": "A hosszú távú ütemező fő feladata a processzor kihasználtságának maximalizálása.",
+    "answer": false
+  },
+  {
+    "text": "A Windows NT ütemezője nem képes dinamikus prioritáskezelésre.",
+    "answer": false
+  },
+  {
+    "text": "A futó folyamatok mindig a legmagasabb prioritási szinthez tartoznak.",
+    "answer": false
+  },
+  {
+    "text": "Az IPC (Interprocess Communication) megvalósítható megosztott memória segítségével.",
+    "answer": true
+  },
+  {
+    "text": "A mikrokernel architektúra előnye a szolgáltatások izolációja.",
+    "answer": true
+  },
+  {
+    "text": "Az NTFS naplózási funkciója biztosítja a rendszer teljes helyreállítását áramkimaradás esetén.",
+    "answer": false
+  },
+  {
+    "text": "A kernel módban futó programok nem hozhatnak létre új folyamatokat.",
+    "answer": false
+  },
+  {
+    "text": "A szálak nem képesek megosztani a globális változókat.",
+    "answer": false
+  },
+  {
+    "text": "A dispatcher modul felelős a szálak közötti váltásért.",
+    "answer": true
+  },
+  {
+    "text": "A kritikus szakaszba való belépés garantáltan meghiúsulhat, ha a rendszer preemptív ütemezést alkalmaz.",
+    "answer": false
+  },
+  {
+    "text": "Az LPC mechanizmus nem alkalmazható a kernel és user mód közötti kommunikációra.",
+    "answer": false
+  },
+  {
+    "text": "A közvetett kommunikáció mindig postafiókokat használ.",
+    "answer": false
+  },
+  {
+    "text": "A BIOS feladata a rendszerindítás támogatása és hardver inicializálás.",
+    "answer": true
+  },
+  {
+    "text": "A veremtár kizárólag a programok lokális változóinak tárolására szolgál.",
+    "answer": false
+  },
+  {
+    "text": "A Windows NT nem használ virtualizációt a memóriakezelés során.",
+    "answer": false
+  },
+  {
+    "text": "A mutual exclusion (kölcsönös kizárás) biztosítása szoftveresen is megvalósítható.",
+    "answer": true
+  },
+  {
+    "text": "Az NT ütemezője csak 32 prioritási szintet támogat.",
+    "answer": false
+  },
+  {
+    "text": "A Spin-lockok kizárólag többprocesszoros rendszerekben hasznosak.",
+    "answer": false
+  },
+  {
+    "text": "Az előretekintő lapozás a rendszer előrejelzésein alapul.",
+    "answer": true
+  },
+  {
+    "text": "A logikai címek mindig a fizikai címekkel egyeznek meg.",
+    "answer": false
+  },
+  {
+    "text": "Az NT rendszerben a szálak a prioritásuk alapján kerülnek futtatásra.",
+    "answer": true
+  },
+  {
+    "text": "A 32-bites rendszerek nem képesek a 4GB-nál nagyobb címtartomány kezelésére.",
+    "answer": false
+  },
+  {
+    "text": "A DMA lehetővé teszi az adatátvitelt a CPU közvetlen beavatkozása nélkül.",
+    "answer": true
+  },
+  {
+    "text": "A szálak váltása során a környezetmentés nem szükséges.",
+    "answer": false
+  },
+  {
+    "text": "A kernel ütemező modulja szigorúan egyetlen komponensből áll.",
+    "answer": false
+  },
+  {
+    "text": "A Windows NT felhasználói módja nem tartalmaz semmilyen jogosultságkezelést.",
+    "answer": false
+  },
+  {
+    "text": "A Dispatcher és a Scheduler funkciói teljesen elkülönülnek a Windows rendszerekben.",
+    "answer": false
+  },
+  {
+    "text": "A Windows NT rendszerek nem támogatják a prioritás öröklést.",
+    "answer": false
+  },
+  {
+    "text": "A blokkok szektorokból állnak, de a logikai clusterek nem feltétlenül azonosak a fizikai blokkokkal.",
     "answer": true
   }
 ]
