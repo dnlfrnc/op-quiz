@@ -14,6 +14,7 @@
     <div id="feedback"></div>
     <button id="next-btn">Következő</button>
     <button id="evaluate-btn" style="display: none;">Értékelés</button>
+    <button id="restart-btn" style="display: none;">Újra</button>
   </div>
 
   <script>
@@ -22,17 +23,21 @@
     let currentIndex = 0;
     let score = 0;
 
-    fetch('questions.json')
-      .then(response => response.json())
-      .then(data => {
-        questions = shuffleArray(data).slice(0, 24);
-        selectedQuestions = questions;
-        showQuestion();
-      })
-      .catch(error => {
-        console.error('Hiba a kérdések betöltésekor:', error);
-        document.getElementById('question').textContent = 'Hiba a kérdések betöltésekor.';
-      });
+    function loadQuiz() {
+      fetch('questions.json')
+        .then(response => response.json())
+        .then(data => {
+          questions = shuffleArray(data).slice(0, 24);
+          selectedQuestions = questions;
+          currentIndex = 0;
+          score = 0;
+          showQuestion();
+        })
+        .catch(error => {
+          console.error('Hiba a kérdések betöltésekor:', error);
+          document.getElementById('question').textContent = 'Hiba a kérdések betöltésekor.';
+        });
+    }
 
     function shuffleArray(array) {
       let shuffled = array.slice();
@@ -48,23 +53,23 @@
         document.getElementById("question").textContent = `${currentIndex + 1}. ${selectedQuestions[currentIndex].text}`;
         document.getElementById("feedback").textContent = "";
         clearSelection();
-        // Gombok kezelése
         document.getElementById("true-btn").style.display = "inline-block";
         document.getElementById("false-btn").style.display = "inline-block";
         document.getElementById("next-btn").style.display = "inline-block";
         document.getElementById("evaluate-btn").style.display = "none";
+        document.getElementById("restart-btn").style.display = "none";
       } else {
-        // Végeredmény megjelenítése
         let resultText = `${selectedQuestions.length}/${score}. `;
         resultText += (score > 16) ? "Sikerült!" : "Nem sikerült.";
         document.getElementById("question").textContent = resultText;
 
-        // Végén: gombok eltüntetése
+        // Gombok eltüntetése, Újra gomb megjelenítése
         document.getElementById("true-btn").style.display = "none";
         document.getElementById("false-btn").style.display = "none";
         document.getElementById("next-btn").style.display = "none";
         document.getElementById("evaluate-btn").style.display = "none";
-        document.getElementById("feedback").textContent = ""; // Ne írja ki, hogy helyes/helytelen
+        document.getElementById("restart-btn").style.display = "inline-block";
+        document.getElementById("feedback").textContent = "";
       }
     }
 
@@ -74,7 +79,6 @@
     document.getElementById("next-btn").onclick = () => {
       currentIndex++;
       if (currentIndex === selectedQuestions.length) {
-        // 24. kérdés után: Értékelés gombot mutatunk
         document.getElementById("true-btn").style.display = "none";
         document.getElementById("false-btn").style.display = "none";
         document.getElementById("next-btn").style.display = "none";
@@ -85,7 +89,11 @@
     };
 
     document.getElementById("evaluate-btn").onclick = () => {
-      showQuestion(); // Végeredményt mutat, nem ír ki "helyes/helytelen" szöveget
+      showQuestion();
+    };
+
+    document.getElementById("restart-btn").onclick = () => {
+      loadQuiz();
     };
 
     function selectAnswer(userAnswer, btnId) {
@@ -97,7 +105,6 @@
         score++;
       }
 
-      // Még a 24. kérdésnél is írja ki a Helyes/Helytelen szöveget
       document.getElementById("feedback").textContent = correct ? "Helyes!" : "Helytelen!";
     }
 
@@ -105,9 +112,13 @@
       document.getElementById("true-btn").classList.remove("selected");
       document.getElementById("false-btn").classList.remove("selected");
     }
+
+    // Alapértelmezett betöltés
+    loadQuiz();
   </script>
 </body>
 </html>
+
 
 
 
