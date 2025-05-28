@@ -22,21 +22,36 @@
     let currentIndex = 0;
     let score = 0;
 
-    function loadQuiz() {
-      fetch('questions.json')
-        .then(response => response.json())
-        .then(data => {
-          questions = shuffleArray(data).slice(0, 24);
-          selectedQuestions = questions;
-          currentIndex = 0;
-          score = 0;
-          showQuestion();
-        })
-        .catch(error => {
-          console.error('Hiba a kérdések betöltésekor:', error);
-          document.getElementById('question').textContent = 'Hiba a kérdések betöltésekor.';
-        });
-    }
+function loadQuiz() {
+  fetch('questions.json')
+    .then(response => response.json())
+    .then(data => {
+      const totalQuestions = data.length;
+      const numSelected = 24;
+      const segments = 6; // Ahány részre osztjuk (pl. 6 rész)
+
+      let selected = [];
+      const questionsPerSegment = Math.ceil(numSelected / segments);
+
+      for (let i = 0; i < segments; i++) {
+        const start = Math.floor((i / segments) * totalQuestions);
+        const end = Math.floor(((i + 1) / segments) * totalQuestions);
+        const segment = data.slice(start, end);
+        const shuffledSegment = shuffleArray(segment).slice(0, questionsPerSegment);
+        selected = selected.concat(shuffledSegment);
+      }
+
+      selectedQuestions = shuffleArray(selected).slice(0, numSelected);
+      currentIndex = 0;
+      score = 0;
+      showQuestion();
+    })
+    .catch(error => {
+      console.error('Hiba a kérdések betöltésekor:', error);
+      document.getElementById('question').textContent = 'Hiba a kérdések betöltésekor.';
+    });
+}
+
 
     function shuffleArray(array) {
       let shuffled = array.slice();
