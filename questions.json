@@ -460,8 +460,8 @@
     "answer": true
   },
   {
-    "text": "Egy folyamathoz egy PCB tartozik",
-    "answer": true
+    "text": "Egy folyamathoz több PCB tartozik",
+    "answer": false
   },
   {
     "text": "Az assembly utasítások számokból állnak",
@@ -493,6 +493,18 @@
   },
   {
     "text": "Az utasításszámláló nem szükségszerű eleme egy szálnak",
+    "answer": false
+  },
+    {
+    "text": "Az NMI azonnal végrehajtandó, maszkolható megszakítást jelent",
+    "answer": false
+  },
+  {
+    "text": "Az IRQ végrehajtása annak prioritási szintjétől függ",
+    "answer": true
+  },
+  {
+    "text": "Az oszthatatlan műveleteket csak az NMI szakíthatja meg",
     "answer": false
   },
   {
@@ -530,6 +542,14 @@
   {
     "text": "A hosszú távú ütemező gyorsabb, mint a középtávú ütemező",
     "answer": false
+  },
+  {
+    "text": "A PCB struktúrájának 4 fő része van",
+    "answer": false
+  },  
+  {
+    "text": "A DMA segítségével a perifériák közvetlenül elérhetik a memóriát",
+    "answer": true
   },
   {
     "text": "A MAR írni és olvasni kívánt memória tartalmát tartalmazza",
