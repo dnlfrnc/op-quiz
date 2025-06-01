@@ -24,11 +24,19 @@
     "answer": true
   },
   {
+    "text": "A középtávú ütemező a kernel része",
+    "answer": false
+  },
+  {
     "text": "Egy folyamathoz több IOCB is tartozhat",
     "answer": true
   },
   {
     "text": "A gyorsító tár gyorsabb, mint az egyik hozzá kapcsolódó, gyorsítandó tár",
+    "answer": true
+  },
+  {
+    "text": "A nem preemptív folyamatok önmaguk lemondhatnak futási jogukról",
     "answer": true
   },
   {
@@ -38,6 +46,10 @@
   {
     "text": "Az átlátszóság azt jelenti, hogy egy szolgáltatás igénybevétele független a szolgáltatás fizikai helyétől, illetve a szolgáltatást biztosító hardvertől és szoftvertől",
     "answer": true
+  },
+  {
+    "text": "Szimmetrikus ütemezés esetén egyetlen CPU futtatja az ütemezőt",
+    "answer": false
   },
   {
     "text": "A Windows NT ha lehetősége van rá, szálütemezést használ",
@@ -184,12 +196,20 @@
     "answer": true
   },
   {
+    "text": "A CPU Utilization azt mutatja meg, hogy a CPU adott időegység alatt mennyi folyamatot volt képes lefuttatni",
+    "answer": false
+  },
+  {
     "text": "Az NTFS Metadata azoknak az adatoknak a gyűjteménye, amelyek egy fájlrendszer kezeléséhez, illetve a benne tárolt fájlok eléréshez szükségesek",
     "answer": true
   },
   {
     "text": "Az NTDLL DLL a user mód legalsó rétege",
     "answer": true
+  },
+  {
+    "text": "A körülfordulási idő azt mutatja meg, hogy a CPU adott időegység alatt mennyi folyamatot volt képes lefuttatni",
+    "answer": false
   },
   {
     "text": "Egy elosztott rendszer minden gépe egyértelműen azonosítható és címezhető",
@@ -209,6 +229,10 @@
   },
   {
     "text": "A MAR tartalmazza az írni vagy olvasni kívánt memória címét nem tartalmazza",
+    "answer": false
+  },
+  {
+    "text": "A válaszidő azt mutatja meg, hogy a folyamat mennyi időt töltött várakozással",
     "answer": false
   },
   {
@@ -328,6 +352,10 @@
     "answer": false
   },
   {
+    "text": "A középtávú ütemező a folyamatok háttértárra történő mozgatását végzi",
+    "answer": true
+  },
+  {
     "text": "Az SMQ jobban kezeli a kiéheztetést mint az MFQ",
     "answer": false
   },
@@ -442,6 +470,10 @@
   {
     "text": "A TestAndSet független a PRAM modell műveleti sorrendjétől",
     "answer": false
+  },  
+  {
+    "text": "A hosszú távú ütemező relatíve gyakran fut",
+    "answer": false
   },
   {
     "text": "Ütemezést kiváltó esemény lehet, amikor a futó folyamat várakozni kényszerül",
@@ -488,7 +520,15 @@
     "answer": false
   },
   {
+    "text": "A hosszú távú ütemező a CPU igényes és I/O igényes folyamatok arányának megtartásáért is felel",
+    "answer": true
+  },
+  {
     "text": "Elosztott fájlrendszer esetén a fájlok állapottere csak uniform lehet",
+    "answer": false
+  },
+  {
+    "text": "Az éheztetés rendszer szintű probléma",
     "answer": false
   },
   {
@@ -514,6 +554,10 @@
   {
     "text": "A Szemafor a szinkronizációs problémák univerzális eszköze",
     "answer": true
+  },
+  {
+    "text": "A holtpont folyamat szintű probléma",
+    "answer": false
   },
   {
     "text": "A Master File Table nem más, mint a fájl rekordok sorozata",
@@ -988,11 +1032,19 @@
     "answer": true
   },
   {
+    "text": "A First Come First Serve preemptív algoritmus",
+    "answer": false
+  },
+  {
     "text": "A legrövidebb löketidejű algoritmus mindig preemptív.",
     "answer": false
   },
   {
     "text": "A Windows NT alapú rendszerek szálütemezést használnak.",
+    "answer": true
+  },
+  {
+    "text": "A Round Robin preemptív algoritmus",
     "answer": true
   },
   {
@@ -1136,6 +1188,10 @@
     "answer": true
   },
   {
+    "text": "A Shortest Job First a legrövidebb löketidejű folyamatnak adja a CPU-t",
+    "answer": true
+  },
+  {
     "text": "Az előidejűség azt jelenti, hogy a folyamatok műveletei időben átfedhetik egymást.",
     "answer": false
   },
@@ -1177,6 +1233,10 @@
   },
   {
     "text": "A TestAndSet és a Swap algoritmus maradéktalanul teljesíti a várakozási idő minimalizálásának feltételét.",
+    "answer": false
+  },
+  {
+    "text": "A Highest Response Ratio algoritmusa az éheztetést segíti elő",
     "answer": false
   },
   {
@@ -1236,6 +1296,10 @@
     "answer": true
   },
   {
+    "text": "Static Multilevel Queues esetén bizonyos folyamatok átjárhatnak a sorok között",
+    "answer": false
+  },
+  {
     "text": "A holtpont operációs rendszer szintű probléma.",
     "answer": true
   },
@@ -1270,6 +1334,10 @@
   {
     "text": "A holtpont kialakulásának négy szükséges feltétele: kölcsönös kizárás, foglalás és várakozás, kiszorításmentesség, körkörös várakozás.",
     "answer": true
+  },
+  {
+    "text": "A UNIX rendszerek szálütemezést használnak",
+    "answer": false
   },
   {
     "text": "A kölcsönös kizárás megosztható erőforrásoknál nem szükséges.",
@@ -1360,6 +1428,10 @@
     "answer": true
   },
   {
+    "text": "A könnyű súlyú folyamatok szálai nem osztoznak a szálakon",
+    "answer": false
+  },
+  {
     "text": "A cache memória gyorsítótár funkciót lát el, és mindig a CPU vezérli.",
     "answer": false
   },
@@ -1402,6 +1474,10 @@
   {
     "text": "A dinamikusan kiosztott partíciók nem okoznak külső töredezettséget.",
     "answer": false
+  },
+  {
+    "text": "A szálak váltása gyorsabb, mint a folyamatok váltása",
+    "answer": true
   },
   {
     "text": "A Best Fit algoritmus a legkisebb, még elegendő méretű területet választja ki.",
@@ -1464,6 +1540,10 @@
     "answer": true
   },
   {
+    "text": "Holtpont kialakulásához 3 feltételnek együttesen teljesülnie kell",
+    "answer": false
+  },
+  {
     "text": "Az LFU algoritmus a legkevésbé gyakran használt lapot cseréli ki.",
     "answer": true
   },
@@ -1498,6 +1578,10 @@
   {
     "text": "A lapcsere algoritmusok hatékonysága nem függ a hardver támogatottságától.",
     "answer": false
+  },
+  {
+    "text": "Az overlay átlapolást jelent",
+    "answer": true
   },
   {
     "text": "A terheléselosztás optimalizálása segíti a rendszer teljesítményét.",
