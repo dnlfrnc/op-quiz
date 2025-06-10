@@ -1,0 +1,257 @@
+[
+  {
+    "question": "1. Milyen jogi formában működhet a vállalkozás?",
+    "answers": [
+      {
+        "text": "gazdasági társaságként",
+        "is_correct": true
+      },
+      {
+        "text": "önkormányzatként",
+        "is_correct": false
+      },
+      {
+        "text": "alkalmazottként",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "2. Jelölje meg, hogy az alábbi állítások közül melyek igazak vagy hamisak!",
+    "answers": [
+      {
+        "text": "Az egyéni vállalkozó korlátlanul felelős a vállalkozásért.",
+        "is_correct": false
+      },
+      {
+        "text": "Az egyéni vállalkozó nem szerepelhet a cégjegyzékben.",
+        "is_correct": true
+      },
+      {
+        "text": "Az egyéni vállalkozó társasági szerződést köt.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "3. Jelölje meg, hogy az alábbi állítások közül melyek igazak vagy hamisak!",
+    "answers": [
+      {
+        "text": "A közkereseti társaság vezetője az ügyvezető.",
+        "is_correct": true
+      },
+      {
+        "text": "A korlátolt felelősségű társaság vezetője az ügyvezető.",
+        "is_correct": true
+      },
+      {
+        "text": "A közkereseti társaság jogi személy.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "4. Melyik gazdasági szervezetre jellemzőek az alábbiak? saját üzletrészének tulajdonosa lehet; tagjának felelőssége korlátozott; jogi személy",
+    "answers": [
+      {
+        "text": "korlátolt felelősségű társaság",
+        "is_correct": true
+      },
+      {
+        "text": "betéti társaság",
+        "is_correct": false
+      },
+      {
+        "text": "egyesület",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "5. Melyik a részvénytársaság tulajdonosi szervezete?",
+    "answers": [
+      {
+        "text": "a vezetőség",
+        "is_correct": false
+      },
+      {
+        "text": "az igazgatósági elnök",
+        "is_correct": false
+      },
+      {
+        "text": "közgyűlés",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question": "6. Válassza ki az alábbiak közül azt, amely nem igaz a szövetkezetekre!",
+    "answers": [
+      {
+        "text": "minden tagjának azonos jogai vannak",
+        "is_correct": false
+      },
+      {
+        "text": "jogi személy",
+        "is_correct": true
+      },
+      {
+        "text": "vezetője az ügyvezető",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question": "1. Az alábbiak közül melyek jelentenek vállalati gazdaságtan felfogást?",
+    "answers": [
+      {
+        "text": "business administration",
+        "is_correct": false
+      },
+      {
+        "text": "strategy business",
+        "is_correct": true
+      },
+      {
+        "text": "Betriebswirtschaft",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "2. Az alább felsoroltak között melyek jellemzik a vállalatot?",
+    "answers": [
+      {
+        "text": "nem profitorientált szervezet",
+        "is_correct": false
+      },
+      {
+        "text": "munkahely",
+        "is_correct": true
+      },
+      {
+        "text": "állandó szervezet",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question": "3. Mi minősül belső tranzakciónak?",
+    "answers": [
+      {
+        "text": "a vállalati iroda használata",
+        "is_correct": true
+      },
+      {
+        "text": "üzleti tárgyalásra utazni vonattal",
+        "is_correct": true
+      },
+      {
+        "text": "üzleti ebéd a város legjobb éttermében",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "4. Mi nem befolyásolja a vállalat nagyságát?",
+    "answers": [
+      {
+        "text": "az értékesítési piac nagysága",
+        "is_correct": false
+      },
+      {
+        "text": "a vállalati tevékenység jellege",
+        "is_correct": true
+      },
+      {
+        "text": "az állami előírások száma",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question": "5. Az alábbiak közül melyek részei az autóipari vertikumnak?",
+    "answers": [
+      {
+        "text": "a motorgyártás",
+        "is_correct": true
+      },
+      {
+        "text": "a taxi-szolgáltatás",
+        "is_correct": false
+      },
+      {
+        "text": "a karosszérialemezek gyártása",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question": "6. Jelölje meg, hogy az alábbi állítás igaz vagy hamis!",
+    "answers": [
+      {
+        "text": "B to b ügylet, ha kötegelt kábelt szállítunk a telefongyárnak.",
+        "is_correct": true
+      },
+      {
+        "text": "B to b ügylet, ha motort szállítunk be az autógyárnak.",
+        "is_correct": false
+      },
+      {
+        "text": "Nem számít b to b ügyletnek egy kész autó eladása.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "7. Az alábbiak közül melyik folyamat egy vállalat core business-e?",
+    "answers": [
+      {
+        "text": "az autógyár számára a szállítók által végzett munka",
+        "is_correct": false
+      },
+      {
+        "text": "az alvállalkozóknak kiadott tevékenység az építőiparban",
+        "is_correct": false
+      },
+      {
+        "text": "az autó összeszerelése az autógyárban",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question": "8. Melyik nem lehet vállalatgeneráló tényező?",
+    "answers": [
+      {
+        "text": "a konjunktúra",
+        "is_correct": true
+      },
+      {
+        "text": "az állam gazdaságpolitikai intézkedése",
+        "is_correct": false
+      },
+      {
+        "text": "a külföldi tőke eltávozása",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question": "9. Az alábbiak közül melyek tartoznak a vállalati életciklushoz?",
+    "answers": [
+      {
+        "text": "a férfikor",
+        "is_correct": true
+      },
+      {
+        "text": "az öregkor",
+        "is_correct": false
+      },
+      {
+        "text": "a háborús konjunktúra",
+        "is_correct": false
+      }
+    ]
+  }
+]
